@@ -18,6 +18,17 @@ class DriversListView(APIView):
         # return a success response
         return Response(serialized_drivers_list.data, status=status.HTTP_200_OK)
 
+class DriverDetailView(APIView):
+
+    def get(self, _request, pk):
+        # fetch a single driver from the driver object using their pk (id)
+        driver = Driver.objects.get(pk=pk)
+        # run the data through serializer to turn into JSON
+        serialized_driver = DriverSerializer(driver)
+        # return a success response
+        return Response(serialized_driver.data, status=status.HTTP_200_OK)
+
+
 
 
 
