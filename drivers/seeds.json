@@ -1,0 +1,36 @@
+[
+{
+  "model": "drivers.driver",
+  "pk": 3,
+  "fields": {
+    "firstname": "Lewis",
+    "surname": "Hamilton",
+    "driver_number": 44,
+    "team": "Mercedes",
+    "points": 347,
+    "image": "https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1920.m",
+    "flag": "https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/countryFlag.img.",
+    "country": "United Kingdom",
+    "podiums": 165,
+    "points_to_date": 3778,
+    "world_championships": 7
+  }
+},
+{
+  "model": "drivers.driver",
+  "pk": 5,
+  "fields": {
+    "firstname": "Sebastian",
+    "surname": "Vettel",
+    "driver_number": 5,
+    "team": "Ferrari",
+    "points": 33,
+    "image": "https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/image.img.1920.medium.jpg/1602844457605.jpg",
+    "flag": "https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/countryFlag.img.jpg/1422627083826.jpg",
+    "country": "Germany",
+    "podiums": 121,
+    "points_to_date": 3018,
+    "world_championships": 4
+  }
+}
+]

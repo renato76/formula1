@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'drivers',
     'rest_framework',
+    'jwt_auth',
 ]
 
 MIDDLEWARE = [
@@ -103,6 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'jwt_auth.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/

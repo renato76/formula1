@@ -27,13 +27,12 @@ class DriversListView(APIView):
             driver_to_create.save()
             return Response(driver_to_create.data, status=status.HTTP_201_CREATED)
         return Response(driver_to_create.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
-    
-    
+        
 
 class DriverDetailView(APIView):
     ''' Handles all requests to /drivers/driver-id (Get-Show, Put-Update and Delete-Delete) '''
 
-    # a helper function as I will need to reuse it for other requests, like PUT and DELETE
+    # a helper function as I will need to reuse it for the other requests, GET, PUT AND DELETE
     def get_driver(self, pk):
         try: 
             return Driver.objects.get(pk=pk)
@@ -53,6 +52,11 @@ class DriverDetailView(APIView):
                 updated_driver.save()
                 return Response(updated_driver.data, status=status.HTTP_202_ACCEPTED)
             return Response(updated_driver.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+    def delete(self, _request, pk):
+        driver_to_delete = self.get_driver(pk=pk)
+        driver_to_delete.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
 
 
 
