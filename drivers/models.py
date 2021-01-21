@@ -5,13 +5,18 @@ class Driver(models.Model):
     surname = models.CharField(max_length=50)
     driver_number = models.PositiveIntegerField(unique=True)
     team = models.CharField(max_length=20)
+    # team = models.ManyToManyField(
+    #     'constructors.Constructor',
+    #     related_name="constructors"
+    # )
     points = models.PositiveIntegerField()
-    image = models.CharField(max_length=100)
-    flag = models.CharField(max_length=100)
+    image = models.CharField(max_length=150)
+    flag = models.CharField(max_length=150)
     country = models.CharField(max_length=30)
     podiums = models.PositiveIntegerField()
     points_to_date = models.PositiveIntegerField()
     world_championships = models.PositiveIntegerField()
+    
 
     def __str__(self):
         return f'{self.firstname} {self.surname}'
