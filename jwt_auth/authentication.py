@@ -12,7 +12,7 @@ class JWTAuthentication(BasicAuthentication):
         header = request.headers.get('Authorization')
         if not header:
             return None
-        if not header.startsWith('Bearer'):
+        if not header.startswith('Bearer'):
             raise PermissionDenied(detail='Invalid Authorization Token Format')
         token = header.replace('Bearer ', '')
         try: 
