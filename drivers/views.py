@@ -7,7 +7,6 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .models import Driver
 from .serializers.common import DriverSerializer
 
-
 class DriversListView(APIView):
 
     ''' Handles all requests to /drivers (Get-Index and Post-Create) '''
@@ -34,6 +33,8 @@ class DriversListView(APIView):
 
 class DriverDetailView(APIView):
     ''' Handles all requests to /drivers/driver-id (Get-Show, Put-Update and Delete-Delete) '''
+
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     # a helper function as I will need to reuse it for the other requests, GET, PUT AND DELETE
     def get_driver(self, pk):
