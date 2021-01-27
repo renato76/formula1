@@ -6,6 +6,7 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Driver
 from .serializers.common import DriverSerializer
+from .serializers.populated import  PopulatedDriverSerializer
 
 class DriversListView(APIView):
 
@@ -46,7 +47,7 @@ class DriverDetailView(APIView):
     def get(self, _request, pk):
     # fetch a single driver from the driver object using their pk (id)
         driver = self.get_driver(pk=pk)
-        serialized_driver = DriverSerializer(driver)
+        serialized_driver = PopulatedDriverSerializer(driver)
         return Response(serialized_driver.data, status=status.HTTP_200_OK)
         
     def put(self, request, pk):

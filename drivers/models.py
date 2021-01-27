@@ -16,6 +16,8 @@ class Driver(models.Model):
     podiums = models.PositiveIntegerField()
     points_to_date = models.PositiveIntegerField()
     world_championships = models.PositiveIntegerField()
+
+    
     
 
     def __str__(self):
