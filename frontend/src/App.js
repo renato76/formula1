@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from './components/common/navbar/Navbar'
 
 class App extends React.Component {
   async componentDidMount() {
@@ -13,7 +14,8 @@ class App extends React.Component {
 
   render() {
     return <div>
-      <h1>Lets do this thing!</h1>
+      <Navbar />
+      {/* <h1>Lets do this thing!</h1> */}
     </div>
   }
 }
