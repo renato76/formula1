@@ -1,24 +1,20 @@
 import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Navbar from './components/common/navbar/Navbar'
 import Home from './components/common/Home'
+import Drivers from './components/common/Drivers'
 
-class App extends React.Component {
-  async componentDidMount() {
-    try {
-      const response = await fetch('/api/drivers')
-      await response.json()
-      
-    } catch (err) {
-      console.log(err)
-    }
-  }
-
-  render() {
-    return <div>
+const App = () => {
+  return (
+    <BrowserRouter>
       <Navbar />
-      <Home />
-    </div>
-  }
+      <Switch>
+        <Route path="/drivers" component={Drivers} />
+        <Route exact path="/" component={Home} />  
+        {/* <Route path="constructors" component={Constructors} /> */}
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
 export default App
