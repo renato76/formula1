@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from './components/common/navbar/Navbar'
+import Home from './components/common/Home'
 
 class App extends React.Component {
   async componentDidMount() {
     try {
       const response = await fetch('/api/drivers')
-      const data = await response.json()
-      console.log(data)
+      await response.json()
+      
     } catch (err) {
       console.log(err)
     }
@@ -15,7 +16,7 @@ class App extends React.Component {
   render() {
     return <div>
       <Navbar />
-      {/* <h1>Lets do this thing!</h1> */}
+      <Home />
     </div>
   }
 }
