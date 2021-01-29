@@ -13,6 +13,7 @@
 }
 
 .drivers-card-container {
+  width: 90%;
   margin: 20px;
   border-top: 2px solid #333333;
   border-right: 2px solid #333333;
@@ -20,7 +21,32 @@
 }
 
 .card-image {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
   img {
   width: 200px;
+  
+  }
+}
+
+@media (min-width: 600px) {
+  .drivers-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .drivers-card-container {
+    width: 40%;
+    margin: 20px;
+    padding: 0;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .drivers-card-container {
+    width: 23%;
   }
 }

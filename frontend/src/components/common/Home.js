@@ -3,7 +3,6 @@ import DriversCard from '../../drivers/DriversCard'
 import { getAllDrivers } from '../../lib/api'
 
 class Home extends React.Component {
-
   state = {
     drivers: null
   }
