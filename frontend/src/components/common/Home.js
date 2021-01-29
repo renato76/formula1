@@ -1,4 +1,5 @@
 import React from 'react'
+import DriversCard from '../../drivers/DriversCard'
 import { getAllDrivers } from '../../lib/api'
 
 class Home extends React.Component {
@@ -26,7 +27,9 @@ class Home extends React.Component {
     return (
       <div className="homepage-container">
         <div className="drivers-row">
-          {this.state.drivers.map(driver => <div key={driver.id}>{driver.firstname}</div>)}
+          {this.state.drivers.map(driver => 
+            <DriversCard key={driver.id} {...driver} />
+          )}
         </div>
       </div>
     )
