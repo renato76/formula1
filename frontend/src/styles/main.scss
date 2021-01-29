@@ -7,10 +7,11 @@
 .navbar {
   background-color: red;
   color: white;
-  height: 50px;
+  height: 70px;
   display: flex;
   
 }
+
 
 .drivers-card-container {
   width: 90%;
@@ -28,6 +29,10 @@
   width: 200px;
   
   }
+}
+
+.homepage-container {
+  margin-top: 50px;
 }
 
 @media (min-width: 600px) {
@@ -48,5 +53,11 @@
 @media (min-width: 800px) {
   .drivers-card-container {
     width: 23%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .drivers-card-container {
+    width: 20%;
   }
 }
