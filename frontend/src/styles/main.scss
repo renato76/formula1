@@ -7,5 +7,20 @@
 .navbar {
   background-color: red;
   color: white;
+  height: 50px;
+  display: flex;
   
+}
+
+.drivers-card-container {
+  margin: 20px;
+  border-top: 2px solid #333333;
+  border-right: 2px solid #333333;
+  border-top-right-radius: 20px;
+}
+
+.card-image {
+  img {
+  width: 200px;
+  }
 }
