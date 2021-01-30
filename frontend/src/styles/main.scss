@@ -3,9 +3,14 @@
 Variables
 ===============
 */
+$f1-red: #db0000;
+$f1-font-white: #ffffff;
 
-
-
+/*
+=============== 
+Global Settings
+===============
+*/
 *,
 ::after,
 ::before {
@@ -14,6 +19,13 @@ Variables
   box-sizing: border-box;
 }
 
+/*
+=============== 
+Global Headings
+===============
+*/
+
+h1,
 h2,
 h3,
 h4 {
@@ -22,18 +34,26 @@ h4 {
 
 
 .navbar {
-  background-color: #db0000;
+  background-color: $f1-red;
   height: 70px;
   display: flex;
   align-items: center;
   a {
-    color: white;
+    color: $f1-font-white;
     font-weight: bold;  
     text-decoration: none;
   } 
 }
 .navbar-item {
   padding-left: 10px;
+}
+.fa-bars::before {
+  display: none;
+}
+.fa-bars {
+  color: white;
+  font-size: 35px;
+  margin-left: 10px;
 }
 
 
@@ -45,6 +65,15 @@ h4 {
   border-top-right-radius: 20px;
   
 }
+.drivers-card-container:hover {
+  border-top: 2px solid #00ffff;
+  border-right: 2px solid #00ffff;
+  transform: scale(1.02);
+  transition: transform 600ms;
+  cursor: pointer;
+}
+
+
 
 
 
@@ -59,7 +88,7 @@ h4 {
   justify-content: flex-end;
   
   img {
-  width: 210px;  
+  width: 250px;  
   }
 }
 .homepage-container {
@@ -70,14 +99,12 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 50px;
+  height: 60px;
   border-bottom: 1px solid black;
-  margin-right: 10px;
+  margin: 5px 10px 0 0;
   
 }
-// .card-points {
 
-// }
 .drivers-title {
   margin-left: 20px;
   h1 {
@@ -85,6 +112,21 @@ h4 {
   font-family: 'Orbitron', sans-serif;
  
   }
+}
+.card-namebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom: 1px solid black;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+
+
+.card-constructor {
+  margin: 10px 0;
 }
 
 
@@ -112,8 +154,18 @@ h4 {
 
 @media (min-width: 1024px) {
   .drivers-card-container {
-    width: 28%;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 29%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1224px) {
+  .drivers-card-container {
+    width: 23%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
   }
 }

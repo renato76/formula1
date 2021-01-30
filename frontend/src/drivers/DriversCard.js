@@ -14,9 +14,12 @@ const DriversCard = (props) => {
         </div>
       </div>
       <div className="card-namebar">
-        <h2>{firstname} {surname}</h2>
+        <div className="name">
+          <h4>{firstname}</h4>
+          <h3>{surname}</h3>
+        </div>
       </div>
-      <div className="constructor">
+      <div className="card-constructor">
         <h4>{team}</h4>
       </div>
       <div className="image-background">
