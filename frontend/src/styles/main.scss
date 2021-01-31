@@ -52,14 +52,14 @@ h4 {
 
 .navbar {
   background-color: $f1-red;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   padding-left: 30px;
   padding-top: 20px;
   font-family: 'Orbitron', sans-serif;
   border-bottom: 1px solid white;
-  animation: navbar-open 1200ms ease-in-out;
+  animation: navbar-open 900ms linear;
   
   a {
     color: $f1-font-white;
@@ -67,7 +67,7 @@ h4 {
     font-weight: bold;  
     text-decoration: none;
     padding: 25px 0px;
-    animation: fadein 1200ms ease-in-out;
+    animation: fadein 80ms linear;
     // text-align: center;
   } 
 }
@@ -80,7 +80,11 @@ h4 {
   border-right: 1px solid white;
   border-bottom-right-radius: 15px;
 }
-.menu-btn,
+.menu-btn {
+  margin-bottom: 20px;
+  font-size: 35px;
+  color: #fff;
+}
 .times-btn {
   margin-bottom: 20px;
   font-size: 35px;
@@ -90,14 +94,17 @@ h4 {
 .times-btn:hover {
   cursor: pointer;
 }
+.times-btn {
+  animation: timesin 700ms linear;
+}
 
 @keyframes navbar-open {
   0% {
-    height: 70px;
+    height: 90px;
   }
 
   100% {
-    height: 100vh;
+    height: 90vh;
   }
 }
 @keyframes fadein {
@@ -108,6 +115,15 @@ h4 {
     opacity: 1;
   }
 }
+@keyframes timesin {
+  0% {
+    font-size: 0px;
+  }
+  100% {
+    font-size: 35px;
+  }
+}
+
 
 
 .drivers-card-container {
@@ -115,8 +131,7 @@ h4 {
   margin: 20px;
   border-top: 2px solid #333333;
   border-right: 2px solid #333333;
-  border-top-right-radius: 20px;
-  transition: transform 400ms;
+  transition: transform 600ms;
 }
 .drivers-card-container:hover {
   border-top: 2px solid #00ffff;
@@ -160,7 +175,7 @@ h4 {
   h1 {
   font-size: 25px;
   font-family: 'Orbitron', sans-serif;
- 
+
   }
 }
 .card-namebar {
@@ -208,6 +223,18 @@ h4 {
     margin-left: 10px;
     margin-right: 10px;
     padding: 0;
+  }
+  .navbar-closed {
+    a {
+      display: flex;
+    }
+  }
+  .navbar-item {
+    border: none;
+  }
+  .menu-btn,
+  .times-btn {
+    display: none;
   }
 }
 

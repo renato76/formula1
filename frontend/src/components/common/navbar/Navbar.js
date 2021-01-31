@@ -11,6 +11,11 @@ class Navbar extends React.Component {
       isActive: !this.state.isActive
     })
   }
+  closeMenu = () => {
+    this.setState({
+      isActive: !this.state.isActive
+    })
+  }
 
   // One class hides the menu links by having height of zero and overflow hiddne
   // another class shows the links by having height of 10rem added to the above class
@@ -24,8 +29,8 @@ class Navbar extends React.Component {
         <div className={isActive ? 'navbar' : 'navbar-closed' }>
           {!isActive ? <FaBars className="menu-btn" onClick={this.handleToggle} /> :
             <FaTimes className="times-btn" onClick={this.handleToggle} />}
-          <Link to="/" className="navbar-item">Home</Link> 
-          <Link to="/drivers" className="navbar-item">Drivers</Link> 
+          <Link to="/" className="navbar-item" onClick={this.closeMenu}>Home</Link> 
+          <Link to="/drivers" className="navbar-item" onClick={this.closeMenu}>Drivers</Link> 
           <Link to="/teams" className="navbar-item">Teams</Link> 
           <Link to="/register" className="navbar-item">Register</Link> 
           <Link to="/login" className="navbar-item">Login</Link> 
