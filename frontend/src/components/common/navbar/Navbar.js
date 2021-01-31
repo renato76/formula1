@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 class Navbar extends React.Component {
   state = { isActive: false }
@@ -20,8 +21,9 @@ class Navbar extends React.Component {
 
     return (
       <nav className="navbar-container">
-        <div className={isActive ? 'navbar' : 'navbar-desktop' }>
-          <button className="menu-btn" onClick={this.handleToggle}>Toggle class</button>
+        <div className={isActive ? 'navbar' : 'navbar-closed' }>
+          {!isActive ? <FaBars className="menu-btn" onClick={this.handleToggle} /> :
+            <FaTimes className="times-btn" onClick={this.handleToggle} />}
           <Link to="/" className="navbar-item">Home</Link> 
           <Link to="/drivers" className="navbar-item">Drivers</Link> 
           <Link to="/teams" className="navbar-item">Teams</Link> 

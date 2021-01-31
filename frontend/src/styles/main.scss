@@ -32,12 +32,14 @@ h4 {
   font-family: 'Raleway', sans-serif;
 }
 
-.navbar-desktop {
+.navbar-closed {
   background-color: $f1-red;
   height: 70px;
   display: flex;
-  padding-left: 40px;
+  padding-left: 30px;
+  padding-top: 20px;
   align-items: center;
+  // animation: navbar-close 200ms ease-in-out;
   // note display none below, i could do media query on desktop sizes to show this sgain
   a {
     display: none;
@@ -50,13 +52,14 @@ h4 {
 
 .navbar {
   background-color: $f1-red;
-  height: 670px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-left: 35px;
-  padding-top: 10px;
+  padding-left: 30px;
+  padding-top: 20px;
   font-family: 'Orbitron', sans-serif;
   border-bottom: 1px solid white;
+  animation: navbar-open 1200ms ease-in-out;
   
   a {
     color: $f1-font-white;
@@ -64,6 +67,7 @@ h4 {
     font-weight: bold;  
     text-decoration: none;
     padding: 25px 0px;
+    animation: fadein 1200ms ease-in-out;
     // text-align: center;
   } 
 }
@@ -76,9 +80,35 @@ h4 {
   border-right: 1px solid white;
   border-bottom-right-radius: 15px;
 }
-.menu-btn {
+.menu-btn,
+.times-btn {
   margin-bottom: 20px;
+  font-size: 35px;
+  color: #fff;
 }
+.menu-btn:hover,
+.times-btn:hover {
+  cursor: pointer;
+}
+
+@keyframes navbar-open {
+  0% {
+    height: 70px;
+  }
+
+  100% {
+    height: 100vh;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .drivers-card-container {
   width: 90%;
@@ -159,7 +189,7 @@ h4 {
     justify-content: center;
   }
   .drivers-card-container {
-    width: 40%;
+    width: 80%;
     margin: 20px;
     padding: 0;
   }
