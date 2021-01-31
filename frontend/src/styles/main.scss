@@ -32,30 +32,53 @@ h4 {
   font-family: 'Raleway', sans-serif;
 }
 
-
-.navbar {
+.navbar-desktop {
   background-color: $f1-red;
   height: 70px;
   display: flex;
+  padding-left: 40px;
   align-items: center;
+  // note display none below, i could do media query on desktop sizes to show this sgain
   a {
+    display: none;
     color: $f1-font-white;
     font-weight: bold;  
     text-decoration: none;
+    padding: 5px;
+  } 
+}
+
+.navbar {
+  background-color: $f1-red;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 35px;
+  padding-top: 10px;
+  font-family: 'Orbitron', sans-serif;
+  border-bottom: 1px solid white;
+  
+  a {
+    color: $f1-font-white;
+    font-size: 16px;
+    font-weight: bold;  
+    text-decoration: none;
+    padding: 25px 0px;
+    // text-align: center;
   } 
 }
 .navbar-item {
   padding-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  height: 40px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom-right-radius: 15px;
 }
-.fa-bars::before {
-  display: none;
+.menu-btn {
+  margin-bottom: 20px;
 }
-.fa-bars {
-  color: white;
-  font-size: 35px;
-  margin-left: 10px;
-}
-
 
 .drivers-card-container {
   width: 90%;
@@ -63,7 +86,7 @@ h4 {
   border-top: 2px solid #333333;
   border-right: 2px solid #333333;
   border-top-right-radius: 20px;
-  
+  transition: transform 400ms;
 }
 .drivers-card-container:hover {
   border-top: 2px solid #00ffff;
@@ -72,9 +95,6 @@ h4 {
   transition: transform 600ms;
   cursor: pointer;
 }
-
-
-
 
 
 .image-background {

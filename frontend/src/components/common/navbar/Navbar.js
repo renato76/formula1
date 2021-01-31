@@ -1,25 +1,36 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaBars } from 'react-icons/fa'
 
-const Navbar = () => {
-  
-  const [showMenu, setShowMenu] = useState(false)
+class Navbar extends React.Component {
+  state = { isActive: false }
 
-  return (
-    <nav className="navbar">
-      <div className="fa-bars" >
-        <FaBars   
-          onClick={() => setShowMenu(!showMenu)}
-        
-        />
-      </div>
-      <div className="nav-links">
-        <Link to="/" className="navbar-item" >Home</Link> 
-        <Link to="/drivers" className="navbar-item" >Drivers</Link> 
-      </div>
-    </nav>
-  )
+  // Write a function that toggles className
+  handleToggle = () => {
+    this.setState({
+      isActive: !this.state.isActive
+    })
+  }
+
+  // One class hides the menu links by having height of zero and overflow hiddne
+  // another class shows the links by having height of 10rem added to the above class
+  // then in return I need an onClick that triggers the function
+
+  render() {
+    const isActive = this.state.isActive
+
+    return (
+      <nav className="navbar-container">
+        <div className={isActive ? 'navbar' : 'navbar-desktop' }>
+          <button className="menu-btn" onClick={this.handleToggle}>Toggle class</button>
+          <Link to="/" className="navbar-item">Home</Link> 
+          <Link to="/drivers" className="navbar-item">Drivers</Link> 
+          <Link to="/teams" className="navbar-item">Teams</Link> 
+          <Link to="/register" className="navbar-item">Register</Link> 
+          <Link to="/login" className="navbar-item">Login</Link> 
+        </div>
+      </nav>
+    )
+  }
 }
 
 export default Navbar
