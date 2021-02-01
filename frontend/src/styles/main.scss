@@ -5,6 +5,7 @@ Variables
 */
 $f1-red: #db0000;
 $f1-font-white: #ffffff;
+$f1-inner-border: #7e7e7e;
 
 /*
 =============== 
@@ -64,9 +65,9 @@ h4 {
   a {
     color: $f1-font-white;
     font-size: 16px;
-    font-weight: bold;  
+    font-weight: lighter;  
     text-decoration: none;
-    padding: 25px 0px;
+    padding: 25px 0px 30px 0;
     animation: fadein 80ms linear;
     // text-align: center;
   } 
@@ -76,8 +77,8 @@ h4 {
   margin-right: 20px;
   margin-bottom: 10px;
   height: 40px;
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
+  border-bottom: 1px solid #ffffff98;
+  border-right: 1px solid #ffffff98;
   border-bottom-right-radius: 15px;
 }
 .menu-btn {
@@ -131,6 +132,7 @@ h4 {
   margin: 20px;
   border-top: 2px solid #333333;
   border-right: 2px solid #333333;
+  border-top-right-radius: 10px;
   transition: transform 600ms;
 }
 .drivers-card-container:hover {
@@ -140,11 +142,27 @@ h4 {
   transition: transform 600ms;
   cursor: pointer;
 }
-
+.card-points {
+  h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 21px;
+  }
+  h4 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 1px 5px;
+    border-radius: 5px;
+  }
+}
+.grid-container {
+  padding-top: 10px;
+  padding-right: 10px;
+}
 
 .image-background {
   background: url('https://www.freeiconspng.com/uploads/large-grid-png-25.png');
-
 }
 
 .card-image {
@@ -153,7 +171,7 @@ h4 {
   justify-content: flex-end;
   
   img {
-  width: 250px;  
+  width: 200px;  
   }
 }
 .homepage-container {
@@ -165,7 +183,7 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   height: 60px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $f1-inner-border;
   margin: 5px 10px 0 0;
   
 }
@@ -182,16 +200,51 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 50px;
-  border-bottom: 1px solid black;
+  height: 58px;
+  border-bottom: 1px solid $f1-inner-border;
   margin-right: 10px;
   margin-top: 10px;
+  
+  .name {
+    border-left: 5px solid #39c7c7;
+    margin-bottom: 12px;
+
+  }
+  h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 21px;
+    font-weight: bolder;
+    padding-left: 8px;
+    letter-spacing: 0.02em;
+  }
+  h4 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    padding-left: 8px;
+    letter-spacing: 0.02em;
+  }
+  .flag-container {
+    margin-top:  6px;
+  }
+  .flag {
+    width: 50px;
+    margin-right: 5px;
+    border-radius: 5px;
+  }
 }
 
 
 
 .card-constructor {
-  margin: 10px 0;
+  margin: 10px 0 0;
+  h4 {
+    color: #7e7e7e;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
 }
 
 
