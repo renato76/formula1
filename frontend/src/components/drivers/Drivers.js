@@ -1,5 +1,5 @@
 import React from 'react'
-import DriversCard from '../../drivers/DriversCard'
+import DriversCard from './DriversCard'
 import { getAllDrivers } from '../../lib/api'
 
 class Drivers extends React.Component {
