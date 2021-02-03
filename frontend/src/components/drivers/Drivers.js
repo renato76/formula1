@@ -20,7 +20,7 @@ class Drivers extends React.Component {
   render() {
     const drivers = this.state.drivers
     console.log(drivers)
-
+    
     if (!this.state.drivers) return null
 
     return (
@@ -29,7 +29,7 @@ class Drivers extends React.Component {
           <h1>F1 Drivers 2020</h1>
         </div>
         <div className="drivers-row">
-          {this.state.drivers.map(driver => 
+          {this.state.drivers.sort((a, b) => b.points > a.points ? 1 : -1).map(driver => 
             <DriversCard key={driver.id} {...driver} />
           )}
         </div>

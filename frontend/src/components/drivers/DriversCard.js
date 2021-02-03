@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 const DriversCard = (props) => {
+
   const { id, title, firstname, surname, image, team, points, flag } = props
   return (
     <div className="drivers-card-container">
