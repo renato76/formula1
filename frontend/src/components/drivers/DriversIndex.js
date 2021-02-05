@@ -2,7 +2,7 @@ import React from 'react'
 import DriversCard from './DriversCard'
 import { getAllDrivers } from '../../lib/api'
 
-class Drivers extends React.Component {
+class DriversIndex extends React.Component {
   state = {
     drivers: null
   }
@@ -38,4 +38,4 @@ class Drivers extends React.Component {
   }
 }
 
-export default Drivers
+export default DriversIndex

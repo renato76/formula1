@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Navbar from './components/common/navbar/Navbar'
 import Home from './components/common/Home'
-import Drivers from './components/drivers/Drivers'
+import DriversIndex from './components/drivers/DriversIndex'
 import DriversShow from './components/drivers/DriversShow'
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route path="/drivers/:id" component={DriversShow} />
-        <Route path="/drivers" component={Drivers} />
+        <Route path="/drivers" component={DriversIndex} />
         <Route exact path="/" component={Home} />  
         {/* <Route path="constructors" component={Constructors} /> */}
       </Switch>

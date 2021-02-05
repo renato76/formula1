@@ -1,17 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
 const DriversCard = (props) => {
 
   const { id, title, firstname, surname, image, team, points, flag } = props
+  console.log(props)
+  
   return (
     <div className="drivers-card-container">
       <Link to={`/drivers/${id}`} >
         <div className="card">
           <div className="card-topbar">
             <div className="card-position">
-              <h3>Position</h3>
+              <h3>{}</h3>
             </div>
             <div className="card-points">
               <h3>{points}</h3>

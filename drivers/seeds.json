@@ -8,8 +8,8 @@
     "driver_number": 44,
     "team": "Mercedes",
     "points": 347,
-    "image": "https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1920.m",
-    "flag": "https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/countryFlag.img.",
+    "image": "https://www.formula1.com/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png.transform/2col-retina/image.png",
+    "flag": "https://www.formula1.com/content/dam/fom-website/flags/United%20Kingdom.jpg.transform/2col-retina/image.jpg",
     "country": "United Kingdom",
     "podiums": 165,
     "points_to_date": 3778,
@@ -25,12 +25,46 @@
     "driver_number": 5,
     "team": "Ferrari",
     "points": 33,
-    "image": "https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/image.img.1920.medium.jpg/1602844457605.jpg",
+    "image": "https://www.formula1.com/content/dam/fom-website/drivers/S/SEBVET01_Sebastian_Vettel/sebvet01.png.transform/2col-retina/image.png",
     "flag": "https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/countryFlag.img.jpg/1422627083826.jpg",
     "country": "Germany",
     "podiums": 121,
     "points_to_date": 3018,
     "world_championships": 4
+  }
+},
+{
+  "model": "drivers.driver",
+  "pk": 6,
+  "fields": {
+    "firstname": "Valtteri",
+    "surname": "Bottas",
+    "driver_number": 77,
+    "team": "Mercedes",
+    "points": 223,
+    "image": "https://www.formula1.com/content/dam/fom-website/drivers/V/VALBOT01_Valtteri_Bottas/valbot01.png.transform/2col-retina/image.png",
+    "flag": "https://www.formula1.com/content/dam/fom-website/flags/Finland.jpg.transform/2col-retina/image.jpg",
+    "country": "Finland",
+    "podiums": 56,
+    "points_to_date": 1512,
+    "world_championships": 0
+  }
+},
+{
+  "model": "drivers.driver",
+  "pk": 7,
+  "fields": {
+    "firstname": "Max",
+    "surname": "Verstappen",
+    "driver_number": 33,
+    "team": "Red Bull Racing",
+    "points": 214,
+    "image": "https://www.formula1.com/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/2col-retina/image.png",
+    "flag": "https://www.formula1.com/content/dam/fom-website/flags/Netherlands.jpg.transform/2col-retina/image.jpg",
+    "country": "Netherlands",
+    "podiums": 42,
+    "points_to_date": 1162,
+    "world_championships": 0
   }
 }
 ]

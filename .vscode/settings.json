@@ -1,3 +1,11 @@
 {
-  "python.pythonPath": "/Users/renatomignogna/.local/share/virtualenvs/django-f1-STWz-DbV/bin/python"
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#3e5afc",
+    "titleBar.activeBackground": "#3e5afc",
+    "titleBar.inactiveBackground": "#3e5afc",
+    "statusBar.foreground": "#000",
+    "titleBar.inactiveForeground": "#000",
+    "titleBar.activeForeground": "#000",
+  },
+  "window.title": "DJANGO F1 BACKEND"
 }

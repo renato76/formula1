@@ -273,6 +273,12 @@ h4 {
   }
 }
 
+.detail-image {
+  img {
+    width: 100%;
+  }
+}
+
 @media (min-width: 600px) {
 
   .drivers-row {
