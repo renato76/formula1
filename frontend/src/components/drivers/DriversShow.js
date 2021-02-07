@@ -24,19 +24,37 @@ class DriversShow extends React.Component {
     if (!driver) return null
     return (
       <div className="drivershow-container">
-        <div className="row detail-row">
-          <div className="col-sm-6 detail-image">
-            <img src={driver.detail_image} />
+        <div className="detail-row">
+          <div className="detail-image-name-container">
+            <div className="detail-image">
+              <img src={driver.detail_image} />
+            </div>
+            <div className="driver-flag">
+              <h3>{driver.driver_number}</h3>
+              <img src={driver.flag} />
+            </div>
+            <div className="detail-name">
+              <h3>{driver.firstname} {driver.surname}</h3>
+            </div>       
           </div>
-          <div className="col-sm-6 detail-info">
-
+          <div className="detail-container">
+            <div className="detail-title">
+              <h4>Team</h4>
+              <h4>Country</h4>
+              <h4>Podiums</h4>
+              <h4>Points</h4>
+              <h4>Points-to-date</h4>
+              <h4>World Championships</h4>
+            </div>
+            <div className="detail-info">
+              <h4>{driver.team}</h4>
+              <h4>{driver.country}</h4>
+              <h4>{driver.podiums}</h4>
+              <h4>{driver.points}</h4>
+              <h4>{driver.points_to_date}</h4>
+              <h4>{driver.world_championships}</h4>
+            </div>
           </div>
-        </div>
-
-        <div className="row">
-          <div className="col-sm">col-sm</div>
-          <div className="col-sm">col-sm</div>
-          <div className="col-sm">col-sm</div>
         </div>
       </div>
     )

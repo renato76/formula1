@@ -1,0 +1,21 @@
+[
+{
+  "model": "jwt_auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$A85DPpCs1tMH$/neCwyLemJFO5O3COLSu14MwWSQOJQ5rcPDOpKI6wro=",
+    "last_login": "2021-02-06T10:45:22.156Z",
+    "is_superuser": true,
+    "username": "renatomignogna",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-02-06T10:45:15.609Z",
+    "email": "ren@email.com",
+    "first_name": "",
+    "last_name": "",
+    "profile_image": "",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

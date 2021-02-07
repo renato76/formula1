@@ -1,0 +1,72 @@
+[
+{
+  "model": "teams.team",
+  "pk": 1,
+  "fields": {
+    "name": "Mercedes"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 2,
+  "fields": {
+    "name": "Ferrari"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 3,
+  "fields": {
+    "name": "McLaren"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 4,
+  "fields": {
+    "name": "Alpine"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 5,
+  "fields": {
+    "name": "Haas F1 Team"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 6,
+  "fields": {
+    "name": "Alfa Romeo Racing"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 7,
+  "fields": {
+    "name": "Red Bull Racing"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 8,
+  "fields": {
+    "name": "Aston Martin"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 9,
+  "fields": {
+    "name": "AlphaTauri"
+  }
+},
+{
+  "model": "teams.team",
+  "pk": 10,
+  "fields": {
+    "name": "Williams"
+  }
+}
+]

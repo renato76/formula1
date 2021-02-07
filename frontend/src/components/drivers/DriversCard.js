@@ -9,7 +9,7 @@ const DriversCard = (props) => {
   return (
     <div className="drivers-card-container">
       <Link to={`/drivers/${id}`} >
-        <div className="card">
+        <div className="cardo">
           <div className="card-topbar">
             <div className="card-position">
               <h3>{}</h3>
