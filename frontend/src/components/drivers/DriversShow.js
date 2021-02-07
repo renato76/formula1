@@ -17,10 +17,16 @@ class DriversShow extends React.Component {
     })
   }
 
+  // getTeam = () => {
+  //   const teamName = this.state.driver.team.name
+  //   return teamName
+  // }
+
 
   render() {
     const { driver } = this.state 
-    // console.log(this.state)
+    console.log(driver)
+    
     if (!driver) return null
     return (
       <div className="drivershow-container">
@@ -47,7 +53,7 @@ class DriversShow extends React.Component {
               <h4>World Championships</h4>
             </div>
             <div className="detail-info">
-              <h4>{driver.team}</h4>
+              <h4>{driver.team.name}</h4>
               <h4>{driver.country}</h4>
               <h4>{driver.podiums}</h4>
               <h4>{driver.points}</h4>

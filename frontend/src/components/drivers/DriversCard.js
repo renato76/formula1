@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const DriversCard = (props) => {
 
-  const { id, title, firstname, surname, image, team, points, flag } = props
+  const { id, title, firstname, surname, image, points, flag, team } = props
   console.log(props)
   
   return (
@@ -31,7 +31,7 @@ const DriversCard = (props) => {
             </div>
           </div>
           <div className="card-constructor">
-            <h4>{team}</h4>
+            <h4>{team.name}</h4>
           </div>
           <div className="grid-container">
             <div className="image-background">

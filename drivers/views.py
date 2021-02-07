@@ -16,7 +16,7 @@ class DriversListView(APIView):
 
     def get(self, _request):
         # fetch all the drivers from the driver object
-        drivers_list = Driver.objects.all()
+        drivers_list = Driver.objects.all().select_related('team')
         # run the data through serializer to turn into JSON
         serialized_drivers_list = DriverSerializer(drivers_list, many=True)
         # return a success response
