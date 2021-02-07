@@ -6,7 +6,7 @@
     "firstname": "Lewis",
     "surname": "Hamilton",
     "driver_number": 44,
-    "team": "1",
+    "team": 1,
     "points": 347,
     "image": "https://www.formula1.com/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png.transform/2col-retina/image.png",
     "detail_image": "https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1024.medium.jpg/1610039131295.jpg",
@@ -24,7 +24,7 @@
     "firstname": "Sebastian",
     "surname": "Vettel",
     "driver_number": 5,
-    "team": "2",
+    "team": 2,
     "points": 33,
     "image": "https://www.formula1.com/content/dam/fom-website/drivers/S/SEBVET01_Sebastian_Vettel/sebvet01.png.transform/2col-retina/image.png",
     "detail_image": "https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/image.img.1024.medium.jpg/1610119226170.jpg",
@@ -42,7 +42,7 @@
     "firstname": "Valtteri",
     "surname": "Bottas",
     "driver_number": 77,
-    "team": "1",
+    "team": 1,
     "points": 223,
     "image": "https://www.formula1.com/content/dam/fom-website/drivers/V/VALBOT01_Valtteri_Bottas/valbot01.png.transform/2col-retina/image.png",
     "detail_image": "https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.1024.medium.jpg/1602844369828.jpg",
@@ -60,7 +60,7 @@
     "firstname": "Max",
     "surname": "Verstappen",
     "driver_number": 33,
-    "team": "7",
+    "team": 7,
     "points": 214,
     "image": "https://www.formula1.com/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/2col-retina/image.png",
     "detail_image": "https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.1024.medium.jpg/1584012927837.jpg",
@@ -68,6 +68,42 @@
     "country": "Netherlands",
     "podiums": 42,
     "points_to_date": 1162,
+    "world_championships": 0
+  }
+},
+{
+  "model": "drivers.driver",
+  "pk": 8,
+  "fields": {
+    "firstname": "Llando",
+    "surname": "Norris",
+    "driver_number": 4,
+    "team": 7,
+    "points": 146,
+    "image": "https://www.formula1.com/content/dam/fom-website/drivers/L/LANNOR01_Lando_Norris/lannor01.png.transform/2col-retina/image.png",
+    "detail_image": "https://www.formula1.com/content/fom-website/en/drivers/lando-norris/_jcr_content/image.img.1024.medium.jpg/1602843378861.jpg",
+    "flag": "https://www.formula1.com/content/dam/fom-website/flags/United%20Kingdom.jpg.transform/2col-retina/image.jpg",
+    "country": "United Kingdom",
+    "podiums": 1,
+    "points_to_date": 146,
+    "world_championships": 0
+  }
+},
+{
+  "model": "drivers.driver",
+  "pk": 9,
+  "fields": {
+    "firstname": "Daniel",
+    "surname": "Ricciardo",
+    "driver_number": 3,
+    "team": 3,
+    "points": 120,
+    "image": "https://www.formula1.com/content/dam/fom-website/drivers/D/DANRIC01_Daniel_Ricciardo/danric01.png.transform/2col-retina/image.png",
+    "detail_image": "https://www.formula1.com/content/fom-website/en/drivers/daniel-ricciardo/_jcr_content/image.img.1536.medium.jpg/1611934724165.jpg",
+    "flag": "https://www.formula1.com/content/dam/fom-website/flags/Australia.jpg.transform/2col-retina/image.jpg",
+    "country": "Australia",
+    "podiums": 31,
+    "points_to_date": 1159,
     "world_championships": 0
   }
 }
