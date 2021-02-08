@@ -16,11 +16,17 @@ class DriversIndex extends React.Component {
     // console.log(this.state.movies)
   }
 
+  // sortedArray = () => {
+  //   const sorted = this.state.drivers.sort((a, b) => b.points > a.points ? 1 : -1)
+  //   console.log(sorted)
+        
+  // }
+
 
   render() {
     const drivers = this.state.drivers
     console.log(drivers)
-    
+
     if (!this.state.drivers) return null
 
     return (
@@ -29,7 +35,7 @@ class DriversIndex extends React.Component {
           <h1>F1 Drivers 2020</h1>
         </div>
         <div className="drivers-row">
-          {this.state.drivers.sort((a, b) => b.points > a.points ? 1 : -1).map(driver => 
+          {drivers.sort((a, b) => b.points > a.points ? 1 : -1).map(driver => 
             <DriversCard key={driver.id} {...driver} />
           )}
         </div>

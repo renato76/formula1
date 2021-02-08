@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const DriversCard = (props) => {
 
   const { id, title, firstname, surname, image, points, flag, team } = props
-  console.log(props)
+  // console.log(props)
   
   return (
     <div className="drivers-card-container">
@@ -12,6 +12,7 @@ const DriversCard = (props) => {
         <div className="cardo">
           <div className="card-topbar">
             <div className="card-position">
+              {/* can try using index position + 1 to add a position for each item in the array */}
               <h3>{}</h3>
             </div>
             <div className="card-points">

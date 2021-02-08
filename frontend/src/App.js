@@ -4,6 +4,7 @@ import Navbar from './components/common/navbar/Navbar'
 import Home from './components/common/Home'
 import DriversIndex from './components/drivers/DriversIndex'
 import DriversShow from './components/drivers/DriversShow'
+import TeamsIndex from './components/teams/TeamsIndex'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Switch>
         <Route path="/drivers/:id" component={DriversShow} />
         <Route path="/drivers" component={DriversIndex} />
+        <Route path="/teams" component={TeamsIndex} />
         <Route exact path="/" component={Home} />  
         {/* <Route path="constructors" component={Constructors} /> */}
       </Switch>

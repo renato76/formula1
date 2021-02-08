@@ -8,3 +8,9 @@ export const getAllDrivers = () => {
 export const getSingleDriver = driverId => {
   return axios.get(`/api/drivers/${driverId}`)
 }
+
+// GET ALL TEAMS
+
+export const getAllTeams = () => {
+  return axios.get('/api/teams/')
+}

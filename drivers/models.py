@@ -19,5 +19,6 @@ class Driver(models.Model):
     world_championships = models.PositiveIntegerField()
 
 
+
     def __str__(self):
         return f'{self.firstname} {self.surname}'
