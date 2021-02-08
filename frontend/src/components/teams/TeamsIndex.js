@@ -24,7 +24,7 @@ class TeamsIndex extends React.Component {
     return (
       <div className="homepage-container">
         <div className="teams-title">
-          <h1>F1 Teams 2020</h1>
+          <h1>F1 Teams 2021</h1>
         </div>
         <div className="teams-row">
           {this.state.teams.map(team => 

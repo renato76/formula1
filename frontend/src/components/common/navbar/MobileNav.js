@@ -32,7 +32,7 @@ class MobileNav extends React.Component {
             <FaTimes className="times-btn" onClick={this.handleToggle} />}
           <Link to="/" className="navbar-item" onClick={this.closeMenu}>Home</Link> 
           <Link to="/drivers" className="navbar-item" onClick={this.closeMenu}>Drivers</Link> 
-          <Link to="/teams" className="navbar-item">Teams</Link> 
+          <Link to="/teams" className="navbar-item" onClick={this.closeMenu}>Teams</Link> 
           <Link to="/register" className="navbar-item">Register</Link> 
           <Link to="/login" className="navbar-item">Login</Link> 
         </div>
