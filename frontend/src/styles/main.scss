@@ -151,7 +151,8 @@ h4 {
   border: none;
 }
 
-.drivers-card-container {
+.drivers-card-container,
+.teams-card-container {
   width: 90%;
   margin: 20px;
   border-top: 2px solid #333333;
@@ -164,11 +165,10 @@ h4 {
   }
   
 }
-.drivers-card-container:hover {
+.drivers-card-container:hover,
+.teams-card-container:hover {
   border-top: 2px solid #00ffff;
   border-right: 2px solid #00ffff;
-  transform: scale(1.02);
-  transition: transform 600ms;
   cursor: pointer;
 }
 

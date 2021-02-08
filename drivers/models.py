@@ -9,6 +9,7 @@ class Driver(models.Model):
         related_name="drivers",
         on_delete=models.DO_NOTHING
     )
+
     points = models.PositiveIntegerField()
     image = models.CharField(max_length=150)
     detail_image = models.CharField(max_length=150)
