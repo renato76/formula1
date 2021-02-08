@@ -32,7 +32,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Raleway', sans-serif;
+  font-family: $f1-font;
 }
 
 .navbar-closed {
@@ -227,10 +227,9 @@ h4 {
 .drivers-title {
   margin-left: 20px;
   h1 {
-  font-size: 25px;
+  font-size: 30px;
   font-family: 'Orbitron', sans-serif;
   font-weight: bold;
-  color: $f1-headings;
   }
 }
 .card-namebar {
@@ -319,7 +318,6 @@ h4 {
 .detail-title {
   h4 {
     font-size: 16px;
-    font-family: $f1-font;
     font-weight: bolder;
   }
   margin-right: 25px;
@@ -327,15 +325,15 @@ h4 {
 .detail-info {
   h4 {
     font-size: 16px;
-    font-family: $f1-font;
   }
 }
 
 .teams-title {
   margin-left: 14px;
+  margin-bottom: 30px;
   h1 {
-    font-family: 'Raleway', sans-serif;
     font-size: 30px;
+    font-weight: bold;
   }
 }
 
@@ -350,7 +348,7 @@ h4 {
   border-top: 2px solid #333333;
   border-right: 2px solid #333333;
   border-top-right-radius: 10px;
-  transition: transform 600ms;
+  transition: 200ms;
   a {
   text-decoration: none;
   color: $f1-headings;
@@ -362,6 +360,7 @@ h4 {
   border-top: 2px solid #00ffff;
   border-right: 2px solid #00ffff;
   cursor: pointer;
+  transition: 200ms;
 }
 
 .teams-card-topbar {
@@ -371,11 +370,22 @@ h4 {
     // height: 65px;
     border-bottom: 1px solid $f1-inner-border;
     margin: 5px 10px 0 0 ;
-  
+    align-items: center;
+    padding: 8px 0;
+    h4 {
+      font-size: 19px;
+    } 
+}
+.team-logo-container {
+  figure {
+    margin: 0;
+  }
+}
+
+.team-logo-box {
   .team-logo {
     width: 50px;
   }
-
 }
 .teams-grid-container {
   padding-top: 10px;
@@ -404,13 +414,13 @@ h4 {
   border-bottom-right-radius: 15px;
   
   h3 {
-    font-family: $f1-font;
+
     font-size: 19px;
     font-weight: bolder;
     margin: 0;
   }
   h4 {
-    font-family: $f1-font;
+
     font-size: 17px;
     font-weight: normal;
     margin: 0;
@@ -487,7 +497,6 @@ h4 {
     justify-content: center;
     a {
       display: flex;  
-      font-family: $f1-font;
       padding: 0 4px;
     }
   }
