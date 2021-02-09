@@ -8,7 +8,7 @@ class TeamsIndex extends React.Component {
   }
   async componentDidMount() {
     const response = await getAllTeams()
-    console.log(response)
+    // console.log(response)
     this.setState({
       teams: response.data
     })
@@ -19,8 +19,8 @@ class TeamsIndex extends React.Component {
 
   render() {
     const teams = this.state.teams
-    console.log(teams)
-    if (!this.state.teams) return null
+    // console.log(teams)
+    if (!teams) return null
     return (
       <div className="homepage-container">
         <div className="teams-title">

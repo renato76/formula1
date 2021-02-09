@@ -338,12 +338,19 @@ h4 {
 }
 
 .teams-card-container {
+  width: 100%;
+  margin: 0px;
   display: flex;
   justify-content: center;
+  a {
+    text-decoration: none;
+    color: $f1-headings;
+    }
 }
 
 .teams-card {
-  width: 95%;
+  margin: 10px;
+  max-width: 600px;
   margin-bottom: 20px;
   border-top: 2px solid #333333;
   border-right: 2px solid #333333;
@@ -356,11 +363,13 @@ h4 {
   
 }
 
+
 .teams-card:hover {
   border-top: 2px solid #00ffff;
   border-right: 2px solid #00ffff;
   cursor: pointer;
   transition: 200ms;
+  
 }
 
 .teams-card-topbar {

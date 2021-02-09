@@ -16,12 +16,6 @@ class DriversIndex extends React.Component {
     // console.log(this.state.movies)
   }
 
-  // sortedArray = () => {
-  //   const sorted = this.state.drivers.sort((a, b) => b.points > a.points ? 1 : -1)
-  //   console.log(sorted)
-        
-  // }
-
 
   render() {
     const drivers = this.state.drivers
