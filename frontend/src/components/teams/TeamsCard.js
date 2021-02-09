@@ -11,7 +11,7 @@ const TeamsCard = (props) => {
         <div className="teams-card">
           <div className="teams-card-topbar">
             <div className="team-name">
-              <h4>{name}</h4>
+              <h3>{name}</h3>
             </div>
             <div className="team-logo-container">
               <figure className="team-logo-box">

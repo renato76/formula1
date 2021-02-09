@@ -9,6 +9,8 @@ $f1-inner-border: #7e7e7e;
 $f1-font: 'Orbitron', sans-serif;
 $f1-headings: #161616;
 
+
+
 /*
 =============== 
 Global Settings
@@ -35,6 +37,22 @@ h4 {
   font-family: $f1-font;
 }
 
+.logo {
+  background-image: url('https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg');
+  width: 132px;
+  height: 33px;
+  position: fixed;
+  left: 33%;
+  top: 20px;
+
+}
+
+.navbar-container {
+  background-color: $f1-red;
+  // height: 70px;
+  width: 100%;
+}
+
 .navbar-closed {
   background-color: $f1-red;
   height: 70px;
@@ -47,10 +65,6 @@ h4 {
   // note display none below, i could do media query on desktop sizes to show this sgain
   a {
     display: none;
-    color: $f1-font-white;
-    font-weight: bold;  
-    text-decoration: none;
-    padding: 5px;
   } 
 }
 
@@ -110,7 +124,6 @@ h4 {
   display: flex;
   padding-left: 30px;
   padding-top: 20px;
-  align-items: center;
   a {
     display: flex;
     color: $f1-font-white;
@@ -119,6 +132,10 @@ h4 {
     padding: 5px;
     border: none;
   } 
+}
+.navbar-logo {
+  justify-content: flex-start;
+  align-items: center;
 }
 
 @keyframes navbar-open {
@@ -362,7 +379,13 @@ h4 {
   }
   
 }
-
+.team-name {
+  h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:bolder;
+    font-size: 25px;
+  }
+}
 
 .teams-card:hover {
   border-top: 2px solid #00ffff;
@@ -451,7 +474,6 @@ h4 {
     margin: 20px;
     padding: 0;
   }
-  
 
 }
 
@@ -492,6 +514,25 @@ h4 {
   .detail-title {
     margin-right: 0px;
   }
+  .teams-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-ar;
+  }
+  .teams-card-container {
+    width: 50%;
+    margin: 0px;
+    display: flex;
+  }
+  
+  .teams-card {
+    margin: 10px;
+    max-width: 550px;
+  }
+  .teams-row {
+    padding: 0 20px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -517,6 +558,14 @@ h4 {
   .times-btn {
     display: none;
   }
+  .teams-row {
+    padding: 0 30px;
+  }
+  .teams-card {
+    margin: 10px;
+    max-width: 650px;
+  }
+
 }
 
 @media (min-width: 1224px) {
@@ -525,5 +574,12 @@ h4 {
     margin-left: 10px;
     margin-right: 10px;
     padding: 0;
+  }
+  .teams-row {
+    padding: 0 50px;
+  }
+  .teams-card {
+    margin: 10px;
+    max-width: 750px;
   }
 }

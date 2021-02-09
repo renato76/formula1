@@ -12,7 +12,6 @@ const DriversCard = (props) => {
         <div className="cardo">
           <div className="card-topbar">
             <div className="card-position">
-              {/* can try using index position + 1 to add a position for each item in the array */}
               <h3>{}</h3>
             </div>
             <div className="card-points">

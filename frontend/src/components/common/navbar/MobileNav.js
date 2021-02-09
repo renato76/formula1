@@ -27,15 +27,16 @@ class MobileNav extends React.Component {
 
     return (
       <nav className="navbar-container">
-        <div className={isActive ? 'navbar-mobile' : 'navbar-closed' }>
+        <div className="logo"></div>
+        <div className={isActive ? 'navbar-mobile' : 'navbar-closed' }>       
           {!isActive ? <FaBars className="menu-btn" onClick={this.handleToggle} /> :
-            <FaTimes className="times-btn" onClick={this.handleToggle} />}
+            <FaTimes className="times-btn" onClick={this.handleToggle} />}                  
           <Link to="/" className="navbar-item" onClick={this.closeMenu}>Home</Link> 
           <Link to="/drivers" className="navbar-item" onClick={this.closeMenu}>Drivers</Link> 
           <Link to="/teams" className="navbar-item" onClick={this.closeMenu}>Teams</Link> 
           <Link to="/register" className="navbar-item">Register</Link> 
-          <Link to="/login" className="navbar-item">Login</Link> 
-        </div>
+          <Link to="/login" className="navbar-item">Login</Link>           
+        </div>   
       </nav>
     )
   }

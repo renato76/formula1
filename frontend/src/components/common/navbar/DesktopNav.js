@@ -6,6 +6,11 @@ const DesktopNav = () => {
     <div>
       <nav className="navbar-container">
         <div className="navbar-desktop">
+          <div className="navbar-d">
+            <a className="navbar-logo" href="/">
+              <img id="logo" src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg" alt="formula1" width="112" height="30" />
+            </a>
+          </div>
           <Link to="/" className="navbar-item" >Home</Link> 
           <Link to="/drivers" className="navbar-item">Drivers</Link> 
           <Link to="/teams" className="navbar-item">Teams</Link> 
