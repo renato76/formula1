@@ -17,12 +17,6 @@ class DriversShow extends React.Component {
     })
   }
 
-  // getTeam = () => {
-  //   const teamName = this.state.driver.team.name
-  //   return teamName
-  // }
-
-
   render() {
     const { driver } = this.state 
     console.log(driver)
