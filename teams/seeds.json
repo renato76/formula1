@@ -3,70 +3,200 @@
   "model": "teams.team",
   "pk": 1,
   "fields": {
-    "name": "Mercedes"
+    "name": "Mercedes",
+    "full_team_name": "1",
+    "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/mercedes-logo.png.transform/2col-retina/image.png",
+    "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/mercedes.png.transform/3col-retina/image.png",
+    "base": "1",
+    "team_chief": "1",
+    "technical_chief": "1",
+    "chassis": "1",
+    "power_unit": "1",
+    "first_team_entry": 1,
+    "world_championships": 1,
+    "pole_positions": 1,
+    "fastest_laps": 1,
+    "team_profile": "1"
   }
 },
 {
   "model": "teams.team",
   "pk": 2,
   "fields": {
-    "name": "Ferrari"
+    "name": "Ferrari",
+    "full_team_name": "1",
+    "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/ferrari-logo.png.transform/2col-retina/image.png",
+    "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/ferrari.png.transform/3col-retina/image.png",
+    "base": "1",
+    "team_chief": "1",
+    "technical_chief": "1",
+    "chassis": "1",
+    "power_unit": "1",
+    "first_team_entry": 1,
+    "world_championships": 1,
+    "pole_positions": 1,
+    "fastest_laps": 1,
+    "team_profile": "1"
   }
 },
 {
   "model": "teams.team",
   "pk": 3,
   "fields": {
-    "name": "McLaren"
+    "name": "McLaren",
+    "full_team_name": "1",
+    "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/mclaren-logo.png.transform/2col-retina/image.png",
+    "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/mclaren.png.transform/3col-retina/image.png",
+    "base": "1",
+    "team_chief": "1",
+    "technical_chief": "1",
+    "chassis": "1",
+    "power_unit": "1",
+    "first_team_entry": 1,
+    "world_championships": 1,
+    "pole_positions": 1,
+    "fastest_laps": 1,
+    "team_profile": "1"
   }
 },
 {
   "model": "teams.team",
   "pk": 4,
   "fields": {
-    "name": "Alpine"
+    "name": "Alpine",
+    "full_team_name": "1",
+    "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/alpine-logo.png.transform/2col-retina/image.png",
+    "car_image": "1",
+    "base": "1",
+    "team_chief": "1",
+    "technical_chief": "1",
+    "chassis": "1",
+    "power_unit": "1",
+    "first_team_entry": 1,
+    "world_championships": 1,
+    "pole_positions": 1,
+    "fastest_laps": 1,
+    "team_profile": "1"
   }
 },
 {
   "model": "teams.team",
   "pk": 5,
   "fields": {
-    "name": "Haas F1 Team"
+    "name": "Haas F1 Team",
+    "full_team_name": "1",
+    "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/haas-f1-team-logo.png.transform/2col-retina/image.png",
+    "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/haas-f1-team.png.transform/3col-retina/image.png",
+    "base": "1",
+    "team_chief": "1",
+    "technical_chief": "1",
+    "chassis": "1",
+    "power_unit": "1",
+    "first_team_entry": 1,
+    "world_championships": 1,
+    "pole_positions": 1,
+    "fastest_laps": 1,
+    "team_profile": "1"
   }
 },
 {
   "model": "teams.team",
   "pk": 6,
   "fields": {
-    "name": "Alfa Romeo Racing"
+    "name": "Alfa Romeo Racing",
+    "full_team_name": "1",
+    "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/alfa-romeo-racing-logo.png.transform/2col-retina/image.png",
+    "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/alfa-romeo-racing.png.transform/3col-retina/image.png",
+    "base": "1",
+    "team_chief": "1",
+    "technical_chief": "1",
+    "chassis": "1",
+    "power_unit": "1",
+    "first_team_entry": 1,
+    "world_championships": 1,
+    "pole_positions": 1,
+    "fastest_laps": 1,
+    "team_profile": "1"
   }
 },
 {
   "model": "teams.team",
   "pk": 7,
   "fields": {
-    "name": "Red Bull Racing"
+    "name": "Red Bull Racing",
+    "full_team_name": "1",
+    "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/red-bull-racing-logo.png.transform/2col-retina/image.png",
+    "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/red-bull-racing.png.transform/3col-retina/image.png",
+    "base": "1",
+    "team_chief": "1",
+    "technical_chief": "1",
+    "chassis": "1",
+    "power_unit": "1",
+    "first_team_entry": 1,
+    "world_championships": 1,
+    "pole_positions": 1,
+    "fastest_laps": 1,
+    "team_profile": "1"
   }
 },
 {
   "model": "teams.team",
   "pk": 8,
   "fields": {
-    "name": "Aston Martin"
+    "name": "Aston Martin",
+    "full_team_name": "1",
+    "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/aston-martin-logo.png.transform/2col-retina/image.png",
+    "car_image": "1",
+    "base": "1",
+    "team_chief": "1",
+    "technical_chief": "1",
+    "chassis": "1",
+    "power_unit": "1",
+    "first_team_entry": 1,
+    "world_championships": 1,
+    "pole_positions": 1,
+    "fastest_laps": 1,
+    "team_profile": "1"
   }
 },
 {
   "model": "teams.team",
   "pk": 9,
   "fields": {
-    "name": "AlphaTauri"
+    "name": "AlphaTauri",
+    "full_team_name": "Scuderia AlphaTauri Honda",
+    "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/alphatauri-logo.png.transform/2col-retina/image.png",
+    "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/alphatauri.png.transform/3col-retina/image.png",
+    "base": "Faenza, Italy",
+    "team_chief": "Franz Tost",
+    "technical_chief": "Jody Egginton",
+    "chassis": "TBC",
+    "power_unit": "Honda",
+    "first_team_entry": 1985,
+    "world_championships": 0,
+    "pole_positions": 1,
+    "fastest_laps": 1,
+    "team_profile": "Established in 2006 as a squad in which young drivers from Red Bull’s prodigious talent pool could cut their F1 teeth, AlphaTauri – originally named Toro Rosso – were formed from the ashes of the plucky Minardi team. Sebastian Vettel gave validity to the approach almost immediately, delivering a fairy-tale win in 2008, before going on to enjoy world championship success with parent team Red Bull Racing. Today the ethos of nurturing talent still holds true, though the Italian squad are no longer simply a ‘B team’ but a constructor in their own right...    2020 A new name brings new impetus and AlphaTauri emerge as a true midfield force, scoring more than a century of points, 27 of them on home soil at Monza, where Pierre Gasly secures his and the team’s maiden win. 2019 In their final season under the Toro Rosso name, enjoy their most successful campaign to date, scoring 85 points and securing sixth in the standings. Mid-season driver swap sees Pierre Gasly return from Red Bull Racing, the Frenchman responding to his ‘demotion’ with a spectacular maiden podium in Brazil.  2018 A year of transition as the team move to Honda power, laying the groundwork for Red Bull Racing doing the same in 2019. Pierre Gasly stars, securing their best result of the year with fourth place in Bahrain and making several Q3 appearances. Ninth in the constructor standings hides solid progress that bodes well for the future."
   }
 },
 {
   "model": "teams.team",
   "pk": 10,
   "fields": {
-    "name": "Williams"
+    "name": "Williams",
+    "full_team_name": "1",
+    "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/williams-logo.png.transform/2col-retina/image.png",
+    "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/williams.png.transform/3col-retina/image.png",
+    "base": "Grove, United Kingdom",
+    "team_chief": "Simon Roberts",
+    "technical_chief": "TBC",
+    "chassis": "TBC",
+    "power_unit": "Mercedes",
+    "first_team_entry": 1978,
+    "world_championships": 9,
+    "pole_positions": 129,
+    "fastest_laps": 133,
+    "team_profile": "Driven on by the brilliance and passion of Sir Frank Williams, Williams grew from humble beginnings to become a Formula 1 behemoth, unrivalled by all except Ferrari and McLaren in terms of enduring success. Over the past four decades the team has racked up Grand Prix wins and championship glory, and in the process nurtured some of the greatest talents in the sport, both in and out the cockpit. Now, following the Williams family's decision to step aside after the sale of the team to Dorilton Capital, a new era begins...2020 End a season without a point for the first time in their history, but the team's future is assured as new owners take over from the Williams family, and closer technical ties to engine suppliers Mercedes are agreed for 2021 and beyond.  2019 A single point from 21 races heralds the worst campaign in the team’s history, despite the addition of former Grand Prix winner Robert Kubica. On the flip side, rookie George Russell marks himself out as a star of the future, out-qualifying his experienced team mate at every round.  2018 The downward trend of recent seasons sadly continues with their points tally slumping into single figures. Leaves them last in the table, despite the best efforts of drivers Lance Stroll and Sergey Sirotkin"
   }
 }
 ]
