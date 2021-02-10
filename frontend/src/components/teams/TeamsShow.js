@@ -31,7 +31,7 @@ class TeamsShow extends React.Component {
               <img src={team.team_logo} />
             </div>
           </div>
-          <div className="detail-container">
+          <div className="team-detail-container">
             <div className="detail-title">
               <h4>Full Team Name</h4>
               <h4>Base</h4>

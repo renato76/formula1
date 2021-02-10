@@ -37,8 +37,8 @@ h4 {
 
 .logo {
   background-image: url('https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg');
-  width: 132px;
-  height: 33px;
+  width: 125px;
+  height: 31px;
   position: fixed;
   left: 33%;
   top: 20px;
@@ -98,9 +98,9 @@ h4 {
 }
 .menu-btn {
   margin-bottom: 20px;
-  font-size: 35px;
+  font-size: 31px;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 .times-btn {
   margin-bottom: 20px;
@@ -300,18 +300,22 @@ h4 {
 
 .detail-container {
   display: flex;
+  padding: 20px 30px;
 }
-.detail-image {
-
+.detail-image { 
   img {
     width: 100%;
-
   }
+}
+.detail-image-name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .driver-flag {
   display: flex;
   height: 30px;
-  margin: 15px 0 15px 30px;
+  margin: 15px 0 15px 5px;
 
   img {
     width: 40px;
@@ -320,21 +324,19 @@ h4 {
   }
 }
 .detail-name {
-  margin-left: 30px;
+  margin-left: 20px;
   h3 {
     font-weight: bold;
     font-family: $f1-headings;
   }
 }
-.detail-container {
-  padding: 20px 30px;
-}
+
 .detail-title {
   h4 {
     font-size: 16px;
     font-weight: bolder;
   }
-  margin-right: 25px;
+  margin-right: 15%;
 }
 .detail-info {
   h4 {
@@ -476,12 +478,43 @@ h4 {
   padding: 10px 50px 10px 20px;
 }
 
-.detail-container {
+.team-detail-container {
+  border-top: 4px solid #009ba0;
+  border-bottom: 4px solid #009ba0;
+  display: flex;
+  padding: 20px 10px 20px 24px;
   background-color: #2e2e2e;
   color: white;
+  justify-content: center;
+  .detail-title {
+    h4 {
+      font-size: 14px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bolder;
+    }
+  }
+  .detail-info {
+    h4 {
+      font-size: 14px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: lighter;
+    }
+  }
 }
 
 
+// *** Homepage
+button {
+  background-color: #e7e7e7;
+  width: 33.33%;
+  height: 50px;
+  border: none;
+}
+.home-container {
+  h1 {
+    text-align: center;
+  }
+}
 
 
 

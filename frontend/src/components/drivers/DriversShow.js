@@ -37,7 +37,7 @@ class DriversShow extends React.Component {
               <h3>{driver.firstname} {driver.surname}</h3>
             </div>       
           </div>
-          <div className="detail-container">
+          <div className="team-detail-container">
             <div className="detail-title">
               <h4>Team</h4>
               <h4>Country</h4>
