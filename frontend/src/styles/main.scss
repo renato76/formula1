@@ -6,7 +6,7 @@ Variables
 $f1-red: #db0000;
 $f1-font-white: #ffffff;
 $f1-inner-border: #7e7e7e;
-$f1-font: 'Orbitron', sans-serif;
+$f1-font: 'Titillium Web', sans-serif;
 $f1-headings: #161616;
 
 /*
@@ -73,7 +73,7 @@ h4 {
   flex-direction: column;
   padding-left: 30px;
   padding-top: 20px;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   border-bottom: 1px solid white;
   animation: navbar-open 300ms linear;
   
@@ -200,14 +200,14 @@ h4 {
   align-items: center;
   // padding: 5px 0px;
   h3 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
     font-weight: bolder;
     color: $f1-headings;
     margin: 0;
   }
   h4 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-weight: bold;
     font-size: 19px;
     background-color: black;
@@ -226,12 +226,13 @@ h4 {
 }
 
 .cards-image {
-  padding: 0;
+  // padding: 5px 10px 0 10px;
   display: flex;
   justify-content: flex-end;
   
   img {
-  width: 200px;  
+  width: 100%;  
+  // padding: 5px 5px 0 5px;
   }
 }
 .homepage-container {
@@ -242,7 +243,7 @@ h4 {
   margin-left: 20px;
   h1 {
   font-size: 30px;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: bold;
   }
 }
@@ -261,16 +262,17 @@ h4 {
     
   }
   h3 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 21px;
     font-weight: bolder;
     padding-left: 8px;
-    letter-spacing: 0.02em;
+    // letter-spacing: 0.001em;
     color: $f1-headings;
+    margin: 0;
   }
   h4 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 17px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
     font-weight: normal;
     padding-left: 8px;
     letter-spacing: 0.02em;
@@ -382,7 +384,7 @@ h4 {
   h3 {
     font-family: $f1-font;
     font-weight:bolder;
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 
@@ -413,23 +415,24 @@ h4 {
   }
 }
 
-.team-logo-box {
-  .team-logo {
-    width: 50px;
-  }
+
+.team-logo {
+  width: 50px;
 }
+
 .teams-grid-container {
   padding-top: 10px;
   padding-right: 10px;
 
 }
 .teams-card-image {
-  padding: 0;
+  padding: 5px 10px;
   display: flex;
   justify-content: center;
   img {
-    width: 84%;
-    padding: 2%;
+    width: 100%;
+    height: 1%;
+    
   }
 }
 .teams-drivers-container {
@@ -465,9 +468,9 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 15px 20px;
   img {
-    width: 100px;
+    width: 60px;
   }
   .team-name {
     margin-right: 20px;
@@ -475,7 +478,9 @@ h4 {
 }
 
 .team-profile {
-  padding: 10px 50px 10px 20px;
+  padding: 10px 10px 10px 20px;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .team-detail-container {
@@ -502,18 +507,50 @@ h4 {
   }
 }
 
-
 // *** Homepage
+
 button {
   background-color: #e7e7e7;
   width: 33.33%;
-  height: 50px;
-  border: none;
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #494949;
+  border-left: none;
+  border-top: none;
+  border-bottom: 4px solid transparent;
+  border-right: 1px solid #a5a5a57a;
+  outline:none;
 }
+button:focus {
+  border-right: 1px solid #a5a5a57a;
+  border-bottom: 4px solid $f1-red;
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+  color: $f1-red;
+  border-bottom: 4px solid $f1-red;
+}
+
+
+
 .home-container {
   h1 {
+    margin-top: 30px;
     text-align: center;
+    font-family: $f1-font;
+    font-size: 26px;
   }
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 100%;
+  background-color: #e4e4e4;
+  height: 50px;
 }
 
 

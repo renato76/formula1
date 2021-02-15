@@ -13,20 +13,19 @@ class DriversIndex extends React.Component {
     this.setState({
       drivers: response.data
     })
-    // console.log(this.state.movies)
+    // console.log(this.state.drivers)
   }
 
 
   render() {
     const drivers = this.state.drivers
-    console.log(drivers)
-
-    if (!this.state.drivers) return null
+    // console.log(drivers)
+    if (!drivers) return null
 
     return (
       <div className="homepage-container">
         <div className="drivers-title">
-          <h1>F1 Drivers 2020</h1>
+          <h1>F1 Drivers 2021</h1>
         </div>
         <div className="drivers-row">
           {drivers.sort((a, b) => b.points > a.points ? 1 : -1).map(driver => 
