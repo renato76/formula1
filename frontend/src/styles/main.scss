@@ -415,7 +415,6 @@ h4 {
   }
 }
 
-
 .team-logo {
   width: 50px;
 }
@@ -540,10 +539,6 @@ button:hover {
   border-bottom: 4px solid $f1-red;
   transition: 500ms;
 }
-
-
-
-
 .home-container {
   h1 {
     margin-top: 30px;
@@ -613,6 +608,18 @@ button:hover {
   padding: 2px 4px;
 }
 
+.team-color-icon-mercedes {
+  background-color: #00d2ee;
+  width: 5px;
+  margin-right: 10px;
+  height: 20px;
+}
+.team-color-icon-ferrari {
+  background-color: #f10a1d;
+  width: 5px;
+  margin-right: 10px;
+  height: 20px;
+}
 
 @media (min-width: 600px) {
 

@@ -1,12 +1,12 @@
 import React from 'react'
-import { getAllDrivers } from '../../lib/api'
+import { getAllDrivers, getAllTeams } from '../../lib/api'
 import DriversStandings from '../drivers/DriversStandings'
 
 class Home extends React.Component {
   state = {
     screen: 'drivers',
     drivers: null,
-    button: ''
+    teams: null
   }
 
   changeTab = screen => {
@@ -19,15 +19,20 @@ class Home extends React.Component {
     this.setState({
       drivers: response.data
     })  
+    const teams = await getAllTeams()
+    // console.log(teams)
     this.setState({
-      button: 'active'
+      teams: teams.data
     })
   }
 
   render() {
     const { screen } = this.state
     const drivers = this.state.drivers
-    console.log(drivers)
+    
+    // console.log(drivers)
+    // const teams = this.state.teams
+    console.log(this.state)
     if (!drivers) return null
     return (
       <div>

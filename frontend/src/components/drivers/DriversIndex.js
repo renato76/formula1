@@ -10,10 +10,17 @@ class DriversIndex extends React.Component {
   async componentDidMount() {
     const response = await getAllDrivers()
     // console.log(response)
+    const drivers = response.data
+    drivers.sort((a, b) => b.points > a.points ? 1 : -1)
+    for (let i = 0; i < drivers.length; ++i) {
+      const driver = drivers[i]
+      driver.index = i + 1
+    }
     this.setState({
-      drivers: response.data
+      drivers
     })
-    // console.log(this.state.drivers)
+
+    console.log(this.state.drivers)
   }
 
   render() {
@@ -27,7 +34,7 @@ class DriversIndex extends React.Component {
           <h1>F1 Drivers 2021</h1>
         </div>
         <div className="drivers-row">
-          {drivers.sort((a, b) => b.points > a.points ? 1 : -1).map(driver => 
+          {drivers.map(driver => 
             <DriversCard key={driver.id} {...driver} />
           )}
         </div>
