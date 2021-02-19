@@ -522,6 +522,7 @@ button {
   border-bottom: 4px solid transparent;
   border-right: 1px solid #a5a5a57a;
   outline:none;
+  // transition: 200ms;
 }
 button:focus {
   border-right: 1px solid #a5a5a57a;
@@ -532,7 +533,14 @@ button:hover {
   cursor: pointer;
   color: $f1-red;
   border-bottom: 4px solid $f1-red;
+  transition: 500ms;
 }
+.active {
+  color: $f1-red;
+  border-bottom: 4px solid $f1-red;
+  transition: 500ms;
+}
+
 
 
 

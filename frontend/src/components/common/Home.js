@@ -5,7 +5,8 @@ import DriversStandings from '../drivers/DriversStandings'
 class Home extends React.Component {
   state = {
     screen: 'drivers',
-    drivers: null
+    drivers: null,
+    button: ''
   }
 
   changeTab = screen => {
@@ -14,10 +15,13 @@ class Home extends React.Component {
 
   async componentDidMount() {
     const response = await getAllDrivers()
-    console.log(response)
+    // console.log(response)
     this.setState({
       drivers: response.data
     })  
+    this.setState({
+      button: 'active'
+    })
   }
 
   render() {
@@ -29,7 +33,7 @@ class Home extends React.Component {
       <div>
         <div className="tabs">
           {['drivers', 'constructors', 'last-race'].map((tab, i) => (
-            <button key={i} value={tab} onClick={() => this.changeTab(tab)} className={`tab ${screen === tab ? '' : 'inactive'}`}>{tab.toUpperCase()}</button>
+            <button key={i} value={tab} onClick={() => this.changeTab(tab)} className={`tab ${screen === tab ? 'active' : 'inactive'}`}>{tab.toUpperCase()}</button>
           ))}
         </div>
         <div className="home-container">
