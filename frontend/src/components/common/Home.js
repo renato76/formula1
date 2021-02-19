@@ -1,5 +1,6 @@
 import React from 'react'
 import { getAllDrivers } from '../../lib/api'
+import DriversStandings from '../drivers/DriversStandings'
 
 class Home extends React.Component {
   state = {
@@ -16,13 +17,14 @@ class Home extends React.Component {
     console.log(response)
     this.setState({
       drivers: response.data
-    })
+    })  
   }
 
   render() {
     const { screen } = this.state
     const drivers = this.state.drivers
     console.log(drivers)
+    if (!drivers) return null
     return (
       <div>
         <div className="tabs">
@@ -36,7 +38,9 @@ class Home extends React.Component {
               <h1>Drivers Standings</h1>
             </div>
             <div className="drivers-standings-container">
-              {/* {drivers.map(driver => driver.surname)} */}
+              {drivers.sort((a, b) => b.points > a.points ? 1 : -1).map(driver => 
+                <DriversStandings key={driver.id} {...driver} />
+              )}       
             </div>
           </div>
           

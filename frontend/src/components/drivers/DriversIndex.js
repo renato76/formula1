@@ -16,7 +16,6 @@ class DriversIndex extends React.Component {
     // console.log(this.state.drivers)
   }
 
-
   render() {
     const drivers = this.state.drivers
     // console.log(drivers)
