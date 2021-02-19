@@ -4,4 +4,4 @@
 
 ### CURENT SCREENSHOT
 
-<img src="./src/styles/screenshots/formula-1-app-screenshot.png" width="500">
+<img src="./frontend/src/styles/screenshots/formula-1-app-screenshot.png" width="500">
