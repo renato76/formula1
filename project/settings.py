@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'jwt_auth',
     'comments',
     'drivers',
-    'teams'
+    'teams',
 ]
 
 MIDDLEWARE = [
