@@ -12,7 +12,7 @@ class DriversIndex extends React.Component {
     // console.log(response)
     const drivers = response.data
     drivers.sort((a, b) => b.points > a.points ? 1 : -1)
-    for (let i = 0; i < drivers.length; ++i) {
+    for (let i = 0; i < drivers.length; i++) {
       const driver = drivers[i]
       driver.index = i + 1
     }

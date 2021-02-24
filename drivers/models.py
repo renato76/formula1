@@ -9,7 +9,6 @@ class Driver(models.Model):
         related_name="drivers",
         on_delete=models.DO_NOTHING
     )
-
     points = models.PositiveIntegerField()
     image = models.CharField(max_length=150)
     detail_image = models.CharField(max_length=150)
@@ -18,9 +17,6 @@ class Driver(models.Model):
     podiums = models.PositiveIntegerField()
     points_to_date = models.PositiveIntegerField()
     world_championships = models.PositiveIntegerField()
-  
-
-
 
     def __str__(self):
         return f'{self.firstname} {self.surname}'

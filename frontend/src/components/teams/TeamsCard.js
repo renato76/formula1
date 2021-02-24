@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 
 const TeamsCard = (props) => {
   const { id, name, team_logo: teamLogo, car_image: carImage } = props
-  // console.log(props)
-
   return (
     <div className="teams-card-container">
       <Link to={`/teams/${id}`} >

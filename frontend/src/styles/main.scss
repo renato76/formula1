@@ -193,7 +193,17 @@ h4 {
   margin: 5px 10px 0 0 ;
   
 }
-
+// .card-position {
+  
+// }
+.index {
+  font-family: $f1-headings;
+  font-size: 38px;
+  background-color: #222222;
+  color: white;
+  padding: 1px 7px;
+  border-radius: 10px;
+  }
 .card-points {
   display: flex;
   flex-direction: column;
@@ -231,7 +241,7 @@ h4 {
   justify-content: flex-end;
   
   img {
-  width: 100%;  
+  width: 70%;  
   // padding: 5px 5px 0 5px;
   }
 }
@@ -609,7 +619,7 @@ button:hover {
 }
 
 .team-color-icon-mercedes {
-  background-color: #00d2ee;
+  background-color: #28ecff;
   width: 5px;
   margin-right: 10px;
   height: 20px;
@@ -620,6 +630,56 @@ button:hover {
   margin-right: 10px;
   height: 20px;
 }
+.team-color-icon-haas {
+  background-color: #515151;
+  width: 5px;
+  margin-right: 10px;
+  height: 20px;
+}
+.team-color-icon-alfa-romeo {
+  background-color: #960000;
+  width: 5px;
+  margin-right: 10px;
+  height: 20px;
+}
+.team-color-icon-alpha-tauri {
+  background-color: #001347;
+  width: 5px;
+  margin-right: 10px;
+  height: 20px;
+}
+.team-color-icon-alpine {
+  background-color: #007eff;
+  width: 5px;
+  margin-right: 10px;
+  height: 20px;
+}
+.team-color-icon-aston-martin {
+  background-color: #00703a;
+  width: 5px;
+  margin-right: 10px;
+  height: 20px;
+}
+.team-color-icon-mclaren {
+  background-color: #fd8000;
+  width: 5px;
+  margin-right: 10px;
+  height: 20px;
+}
+.team-color-icon-red-bull {
+  background-color: #1e41ff;
+  width: 5px;
+  margin-right: 10px;
+  height: 20px;
+}
+.team-color-icon-williams {
+  background-color: #00b5ff;
+  width: 5px;
+  margin-right: 10px;
+  height: 20px;
+}
+
+
 
 @media (min-width: 600px) {
 

@@ -4,11 +4,19 @@ import { Link } from 'react-router-dom'
 const DriversStandings = (props) => {
 
   const { id, firstname, surname, team, points } = props
-  // console.log(props)
+  console.log(props)
   console.log(team.name)
   const teamClassNames = {
     'Mercedes': 'team-color-icon-mercedes',
-    'Ferrari': 'team-color-icon-ferrari'
+    'Ferrari': 'team-color-icon-ferrari',
+    'McLaren': 'team-color-icon-mclaren',
+    'Alpine': 'team-color-icon-alpine',
+    'Haas F1 Team': 'team-color-icon-haas',
+    'Alfa Romeo Racing': 'team-color-icon-alfa-romeo',
+    'Red Bull Racing': 'team-color-icon-red-bull',
+    'Aston Martin': 'team-color-icon-aston-martin',
+    'AlphaTauri': 'team-color-icon-alpha-tauri',
+    'Williams': 'team-color-icon-williams'
   }
   const teamClassName = teamClassNames[team.name]
   

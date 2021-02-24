@@ -12,7 +12,7 @@ const DriversCard = (props) => {
         <div className="cardo">
           <div className="card-topbar">
             <div className="card-position">
-              <h3>{index}</h3>
+              <h3 className="index">{index}</h3>
             </div>
             <div className="card-points">
               <h3>{points}</h3>
