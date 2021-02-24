@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const DriversStandings = (props) => {
+  const [info, setInfo] = useState(false)
+
+  const showInfo = () => {
+    if (window.innerWidth <= 768) {
+      setInfo(false)
+    } else {
+      setInfo(true)
+    }
+  }
+  window.addEventListener('resize', showInfo)
 
   const { id, firstname, surname, team, points } = props
   console.log(props)
@@ -27,11 +37,11 @@ const DriversStandings = (props) => {
           <div className="standings-list-items">  
             <div className="drivers-name">
               <span className={teamClassName}></span>
-              <h4 className="firstname">{firstname}</h4>
+              {info && <h5 className="firstname">{firstname}</h5> }
               <h4 className="surname">{surname}</h4>
-            </div>
-            <div className="standings-team">
-              <h4>{team.name}</h4>
+              {info && 
+                <h4 className="team-name">{team.name}</h4>
+              }
             </div>
             <div className="drivers-standings-points">
               <h4 className="standings-points">{points} PTS</h4>

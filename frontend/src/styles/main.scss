@@ -5,6 +5,7 @@ Variables
 */
 $f1-red: #db0000;
 $f1-font-white: #ffffff;
+$f1-font-grey: #7e7e7e;
 $f1-inner-border: #7e7e7e;
 $f1-font: 'Titillium Web', sans-serif;
 $f1-headings: #161616;
@@ -569,11 +570,10 @@ button:hover {
 .standings-list-items {
   display: flex;
   justify-content: space-between;
-  h4 {
-    font-size: 18px;
+  h4,
+  h5 {
     color: black;
     font-family: 'Titillium Web', sans-serif;
-    font-weight: bold;
   }
 }
 .drivers-standings-heading {
@@ -596,26 +596,42 @@ button:hover {
   padding-left: 30px;
   margin: 0 25px;
   background-color: white;
+  a {
+    text-decoration: none;
+  }
 }
 .drivers-name {
   display: flex;
 }
-
-.firstname,
-.standings-team {
-  display: none;
+.firstname {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.surname {
+  font-size: 18px;
+  margin-right: 12px;
+  font-weight: 700;
+}
+.team-name {
+  margin-right: 8px;
+  font-size: 15px;
+  margin-top: 3px;
+  h4 {
+    color: $f1-font-grey;
+  }
 }
 .drivers-standings-points {
   display: flex;
   margin-right: 30px;
   h4 {
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 700;
   }
 }
 .standings-points {
   background-color: rgb(223, 223, 223);
   border-radius: 5px;
-  padding: 2px 4px;
+  padding: 2px 6px;
 }
 
 .team-color-icon-mercedes {
@@ -753,6 +769,7 @@ button:hover {
     padding: 0 20px;
   }
 }
+
 
 @media (min-width: 1024px) {
   .drivers-card-container {
