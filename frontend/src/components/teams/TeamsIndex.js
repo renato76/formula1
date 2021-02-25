@@ -12,7 +12,7 @@ class TeamsIndex extends React.Component {
     this.setState({
       teams: response.data
     })
-    console.log(this.state.teams)
+    // console.log(this.state.teams)
   }
 
 

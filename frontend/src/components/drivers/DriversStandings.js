@@ -1,7 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const DriversStandings = (props) => {
+  const { id, firstname, surname, team, points } = props
+  // console.log(props)
+  // console.log(team.name)
+
+
+  // using React useState Hook to toggle info based on screen size
   const [info, setInfo] = useState(false)
 
   const showInfo = () => {
@@ -12,10 +18,10 @@ const DriversStandings = (props) => {
     }
   }
   window.addEventListener('resize', showInfo)
+  useEffect(() => {
+    showInfo()
+  }, [])
 
-  const { id, firstname, surname, team, points } = props
-  console.log(props)
-  console.log(team.name)
   const teamClassNames = {
     'Mercedes': 'team-color-icon-mercedes',
     'Ferrari': 'team-color-icon-ferrari',
@@ -29,12 +35,12 @@ const DriversStandings = (props) => {
     'Williams': 'team-color-icon-williams'
   }
   const teamClassName = teamClassNames[team.name]
-  
+
   return (
     <div className="standings-container">
       <div className="standings">
         <Link to={`/drivers/${id}`} >
-          <div className="standings-list-items">  
+          <div id="standings-list" className="standings-list-items">  
             <div className="drivers-name">
               <span className={teamClassName}></span>
               {info && <h5 className="firstname">{firstname}</h5> }
@@ -44,7 +50,7 @@ const DriversStandings = (props) => {
               }
             </div>
             <div className="drivers-standings-points">
-              <h4 className="standings-points">{points} PTS</h4>
+              <h6 className="standings-points">{points} PTS</h6>
             </div>
           </div>
         </Link>
