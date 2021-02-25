@@ -4,19 +4,19 @@
   "pk": 1,
   "fields": {
     "name": "Mercedes",
-    "full_team_name": "1",
+    "full_team_name": "Mercedes-AMG Petronas F1 Team",
     "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/mercedes-logo.png.transform/2col-retina/image.png",
     "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/mercedes.png.transform/3col-retina/image.png",
-    "base": "1",
-    "team_chief": "1",
-    "technical_chief": "1",
-    "chassis": "1",
-    "power_unit": "1",
-    "first_team_entry": 1,
-    "world_championships": 1,
-    "pole_positions": 1,
-    "fastest_laps": 1,
-    "team_profile": "1"
+    "base": "Brackley, United Kingdom",
+    "team_chief": "Toto Wolff",
+    "technical_chief": "James Allison",
+    "chassis": "W12",
+    "power_unit": "Mercedes",
+    "first_team_entry": 1970,
+    "world_championships": 7,
+    "pole_positions": 118,
+    "fastest_laps": 75,
+    "team_profile": "Mercedes’ modern F1 revival started with the creation of a works squad for 2010 - the platform for a meteoric rise up the Grand Prix order. The team generated huge excitement from the off with the sensational return of Michael Schumacher, but headlines soon followed on track: three podiums in their debut season, all via Nico Rosberg - who then claimed a breakthrough pole/victory double at China in 2012. The following season he was paired with Lewis Hamilton, the duo going on to stage some epic title battles as the Silver Arrows swept all before them to become one of the most dominant forces of the modern F1 era. And with Hamilton now partnered by steely Finn Valtteri Bottas, Mercedes remain very much the team to beat…  2020 Just when you think they can’t get any better, Mercedes – and in particular Lewis Hamilton – step it up another gear. The reigning champion wins 11 races and smashes records galore en route to a Schumacher-equalling seventh drivers' title, despite missing a round with Covid-19. Add two wins for Valtteri Bottas and it’s another dominant double crown for the Silver Arrows.  2019 Start the season with an unprecedented five one-two victories, and follow it up with a further 10 wins, thus securing their sixth title double on the bounce. All-round teamwork, rather than outright pace, is often the key to success. Valtteri Bottas ups his game, meaning Lewis Hamilton has to work hard to secure his sixth drivers’ crown, bringing the Brit tantalising close to matching Michael Schumacher’s all-time record.  2018 It’s a season predominantly about Lewis Hamilton, whose 11 victories help secure a fifth consecutive championship double for the team – despite rivals Ferrari often having the quicker car – continuing their dominance of the turbo-hybrid era. Team mate Valtteri Bottas ends the year winless after being forced to play rear-gunner to the rampant Hamilton."
   }
 },
 {
@@ -24,19 +24,19 @@
   "pk": 2,
   "fields": {
     "name": "Ferrari",
-    "full_team_name": "1",
+    "full_team_name": "Scuderia Ferrari Mission Winnow",
     "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/ferrari-logo.png.transform/2col-retina/image.png",
     "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/ferrari.png.transform/3col-retina/image.png",
-    "base": "1",
-    "team_chief": "1",
-    "technical_chief": "1",
-    "chassis": "1",
-    "power_unit": "1",
-    "first_team_entry": 1,
-    "world_championships": 1,
-    "pole_positions": 1,
-    "fastest_laps": 1,
-    "team_profile": "1"
+    "base": "Maranello, Italy",
+    "team_chief": "Mattia Binotto",
+    "technical_chief": "Simone Resta",
+    "chassis": "SF21",
+    "power_unit": "Ferrari",
+    "first_team_entry": 1950,
+    "world_championships": 16,
+    "pole_positions": 221,
+    "fastest_laps": 253,
+    "team_profile": "For many, Ferrari and Formula 1 racing have become inseparable. The only team to have competed in every season since the world championship began, the Prancing Horse has grown from the humble dream of founder Enzo Ferrari to become one of the most iconic and recognised brands in the world. Success came quickly through the likes of Alberto Ascari and John Surtees, and continued – in amongst leaner times – with Niki Lauda in the 1970s and then Michael Schumacher in the 2000s, when Ferrari claimed a then unprecedented five consecutive title doubles, securing their status as the most successful and decorated team in F1 history...   2020 Sink to their worst performance in four decades, failing to win a race, scoring just three podiums and falling to sixth in the standings. Sebastian Vettel is told early on that his contract will not be renewed for 2021, and it’s Charles Leclerc who secures 98 of the team’s 131 points.2019 The pattern of recent years continues, as they fail to win a race until August’s Belgian GP, despite being clear pre-season favourites and often having the quickest car. A tense (and at times expensive) rivalry sees newcomer Charles Leclerc out-score veteran team mate Sebastian Vettel, with two victories to the four-time champion’s one.  2018 A case a déjà vu, as Ferrari produce what is for much of the year the fastest package on the grid, and yet are somehow out-raced, out-strategized and out-developed by reigning champions Mercedes. Sebastian Vettel supplies their five season victories – but also some rather costly mistakes."
   }
 },
 {
@@ -44,19 +44,19 @@
   "pk": 3,
   "fields": {
     "name": "McLaren",
-    "full_team_name": "1",
+    "full_team_name": "McLaren F1 Team",
     "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/mclaren-logo.png.transform/2col-retina/image.png",
     "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/mclaren.png.transform/3col-retina/image.png",
-    "base": "1",
-    "team_chief": "1",
-    "technical_chief": "1",
-    "chassis": "1",
-    "power_unit": "1",
-    "first_team_entry": 1,
-    "world_championships": 1,
-    "pole_positions": 1,
-    "fastest_laps": 1,
-    "team_profile": "1"
+    "base": "Woking, United Kingdom",
+    "team_chief": "Andreas Seidl",
+    "technical_chief": "James Key",
+    "chassis": "MCL35M",
+    "power_unit": "Mercedes",
+    "first_team_entry": 1966,
+    "world_championships": 8,
+    "pole_positions": 155,
+    "fastest_laps": 158,
+    "team_profile": "Since entering the sport in 1966 under the guidance and restless endeavour of eponymous founder Bruce, McLaren's success has been nothing short of breathtaking. Five glittering decades have yielded countless victories, pole positions and podiums, not to mention eight constructors' championships. What's more, some of the sport's greatest drivers made their names with the team, including Emerson Fittipaldi, Ayrton Senna, Mika Hakkinen and Lewis Hamilton...    2020 Quick and consistent, beat their upper-midfield rivals to P3 in the standings as Ferrari falter, with Carlos Sainz and Lando Norris both scoring podium finishes. Agree deal to use Mercedes power from 2021.  2019 With the Renault partnership starting to gel, and rookie star Lando Norris pushing the experienced Carlos Sainz hard, re-establish themselves as clear ‘best of the rest’ behind the big three teams. Third place in Brazil marks their first podium in five years.  2018 A move to Renault power brings instant improvement and 40 points from the first five races. But that form proves hard to sustain and, despite some battling drives from Fernando Alonso, the remaining 16 Grands Prix bring just 10 more, leaving the team sixth in the final standings."
   }
 },
 {
@@ -64,19 +64,19 @@
   "pk": 4,
   "fields": {
     "name": "Alpine",
-    "full_team_name": "1",
+    "full_team_name": "Alpine F1 Team",
     "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/alpine-logo.png.transform/2col-retina/image.png",
     "car_image": "1",
-    "base": "1",
+    "base": "Enstone, United Kingdom",
     "team_chief": "1",
     "technical_chief": "1",
-    "chassis": "1",
-    "power_unit": "1",
-    "first_team_entry": 1,
-    "world_championships": 1,
-    "pole_positions": 1,
-    "fastest_laps": 1,
-    "team_profile": "1"
+    "chassis": "A521",
+    "power_unit": "Renault",
+    "first_team_entry": 1986,
+    "world_championships": 2,
+    "pole_positions": 20,
+    "fastest_laps": 15,
+    "team_profile": "Alpine may be a new name to Formula 1 for 2021, as Renault’s F1 team is rebranded, but their famous sportscar arm has plenty of motorsport heritage. The rebirth marks the next step in Renault’s F1 revival, begun in 2016 with the takeover of the then-Lotus team. They’ve been back on the podium since then, but now – with a new management and driver line-up in place – wins must be the next target…  2020 Three podium finishes – the first since Renault’s works return – signal a significant step forward ahead of the team’s Alpine rebrand, and Fernando Alonso’s comeback, for 2021.  2019 Progress up the championship order is halted, ironically by new Renault customers McLaren, who demote them to fifth in the standings, despite Daniel Ricciardo securing their best result to date with P4 in Italy.  2018 Rise up the grid continues apace, seeing off Haas to become ‘best of the rest’ behind the top three teams. Not quite podium contenders yet – fifth places in Azerbaijan and Germany are their best results – but their obvious potential lures Daniel Ricciardo away from Red Bull for 2019, replacing Carlos Sainz."
   }
 },
 {
@@ -84,19 +84,19 @@
   "pk": 5,
   "fields": {
     "name": "Haas F1 Team",
-    "full_team_name": "1",
+    "full_team_name": "Haas F1 Team",
     "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/haas-f1-team-logo.png.transform/2col-retina/image.png",
     "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/haas-f1-team.png.transform/3col-retina/image.png",
-    "base": "1",
-    "team_chief": "1",
-    "technical_chief": "1",
+    "base": "Kannapolis, United States",
+    "team_chief": "Guenther Steiner",
+    "technical_chief": "Rob Taylor",
     "chassis": "1",
-    "power_unit": "1",
-    "first_team_entry": 1,
-    "world_championships": 1,
-    "pole_positions": 1,
-    "fastest_laps": 1,
-    "team_profile": "1"
+    "power_unit": "Ferrari",
+    "first_team_entry": 2106,
+    "world_championships": 0,
+    "pole_positions": 0,
+    "fastest_laps": 2,
+    "team_profile": "The youngest team on the grid, Haas made their highly impressive debut in 2016, and in the process became the first all-American-led F1 squad in three decades. Founded by industrialist Gene Haas, they are based in the United States on the same Kannapolis, North Carolina facility as his championship-winning NASCAR Sprint Cup Series team, Stewart-Haas Racing. The Ferrari-powered team, led by the charismatic Guenther Steiner, also have a UK factory in Banbury…  2020 Unable to halt their downward spiral, drop to P9 overall in the table, scoring just three points in the final year of the team’s Grosjean-Magnussen era. Season ends in dramatic fashion, as Romain Grosjean miraculously walks away from fiery, high-speed crash in Bahrain. 2019 The Haas fairy tale finally hits a bump in the road, as they struggle to get a handle on their recalcitrant VF-19 machine. Fall to eighth in the table, with Romain Grosjean and Kevin Magnussen amassing a meagre 28 points between them.  2018 Rapid year-on-year progress continues with a move up to fifth in the final standings – and it could have been fourth were it not for unnecessary errors. Botched pit stops for both cars in Australia rob them of their best-ever race result, while a fuel infringement and an illegal floor lead to disqualifications in the US and Italy respectively. Highly promising nonetheless.  2017 Romain Grosjean pairs up with a new team mate in the form of feisty Dane Kevin Magnussen and Haas prove that their maiden campaign was no flash in the pan, scoring 47 points – 18 more than in 2016 – to retain eighth place in the standings.  2016 Field an experienced driver line-up for their inaugural season, securing the services of Romain Grosjean, a ten-time podium finisher with Lotus, and former Sauber racer and Ferrari tester Esteban Gutierrez. It all comes together in stunning fashion, with Grosjean finishing sixth and fifth in the team’s first two races, and going on to score a further three times to put them a highly respectable eighth in the final constructors’ table - the best debut by a new team this century."
   }
 },
 {
@@ -104,19 +104,19 @@
   "pk": 6,
   "fields": {
     "name": "Alfa Romeo Racing",
-    "full_team_name": "1",
+    "full_team_name": "Alfa Romeo Racing ORLEN",
     "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/alfa-romeo-racing-logo.png.transform/2col-retina/image.png",
     "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/alfa-romeo-racing.png.transform/3col-retina/image.png",
-    "base": "1",
-    "team_chief": "1",
-    "technical_chief": "1",
-    "chassis": "1",
-    "power_unit": "1",
-    "first_team_entry": 1,
-    "world_championships": 1,
+    "base": "Hinwil, Switzerland",
+    "team_chief": "Frédéric Vasseur",
+    "technical_chief": "Jan Monchaux",
+    "chassis": "C41",
+    "power_unit": "Ferrari",
+    "first_team_entry": 1993,
+    "world_championships": 0,
     "pole_positions": 1,
-    "fastest_laps": 1,
-    "team_profile": "1"
+    "fastest_laps": 5,
+    "team_profile": "The name Alfa Romeo boasts Formula 1 connections dating back to the championship’s inception in 1950. Fast forward to the 21st century and Italian flare combines with Swiss sensibilities in a new era for the team formerly known as Sauber.  Having enjoyed considerable success in world sportscars, where he helped nurture the emerging talents of future F1 stars Michael Schumacher and Heinz-Harald Frentzen, Peter Sauber guided his eponymous squad into F1 in 1993.  The team has since established itself as a mainstay of the grid, becoming race winners under BMW’s brief ownership, and developing a well-earned reputation not only for producing competitive cars, but also for developing young drivers.   2020 Another season of infrequent highs – both cars scoring points at their home race of Imola, and both making Q3 in Turkey – again ends with P8 overall, Kimi Raikkonen and Antonio Giovinazzi amassing just eight points between them. 2019 Progress slows, as the C38 proves frustratingly inconsistent, even with the experienced Kimi Raikkonen at the wheel. Nevertheless retain P8 in the standings, 22 of their 57 points coming at the season’s eventful penultimate round in Brazil.  2018 Team Principal Fred Vasseur steers his squad on a surprisingly rapid upward path, their Ferrari-powered C37 proving increasingly competitive, particularly in the hands of rookie star Charles Leclerc, who scores 39 of their 48 points – a total almost 10 times their 2017 tally.  Read Alfa Romeo Racing's full year-by-year profile"
   }
 },
 {
@@ -124,19 +124,19 @@
   "pk": 7,
   "fields": {
     "name": "Red Bull Racing",
-    "full_team_name": "1",
+    "full_team_name": "Red Bull Racing",
     "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/red-bull-racing-logo.png.transform/2col-retina/image.png",
     "car_image": "https://www.formula1.com/content/dam/fom-website/teams/2021/red-bull-racing.png.transform/3col-retina/image.png",
-    "base": "1",
-    "team_chief": "1",
-    "technical_chief": "1",
-    "chassis": "1",
-    "power_unit": "1",
-    "first_team_entry": 1,
-    "world_championships": 1,
-    "pole_positions": 1,
-    "fastest_laps": 1,
-    "team_profile": "1"
+    "base": "Milton Keynes, United Kingdom",
+    "team_chief": "Christian Horner",
+    "technical_chief": "Pierre Waché",
+    "chassis": "RB16B",
+    "power_unit": "Honda",
+    "first_team_entry": 1997,
+    "world_championships": 4,
+    "pole_positions": 63,
+    "fastest_laps": 68,
+    "team_profile": "Red Bull were no strangers to F1 - as sponsors - prior to formally entering as a works team in 2004. Nonetheless, the scale of their success over the following decade was staggering. After a first podium in 2006, the team hit their stride in 2009, claiming six victories and second in the constructors' standings. Over the next four seasons they were a tour de force, claiming consecutive title doubles between 2010 and 2013, with Sebastian Vettel emerging as the sport's youngest quadruple champion. Now their hopes of recapturing that glory lie with an equally exciting talent – one named Max Verstappen…  2020 A lonely second in the standings, consistently clear of the midfield but rarely able to match the pace of champions Mercedes. Max Verstappen stars – with two wins and another nine podiums – but Alex Albon is dropped for 2021 after just two top-three appearances. 2019 Transition from Renault to Honda power is remarkably smooth, and Max Verstappen’s four wins ensure an almost identical points tally to 2018. Drop Pierre Gasly mid-year in favour of rookie Alex Albon, and late-season progress raises hopes of a genuine title challenge in 2020.  2018 A lack of performance and reliability from their Renault power units means that only on occasions are they in genuine contention for victories – Daniel Ricciardo wins in China and Monaco, Max Verstappen in Austria and Mexico. The result is a very lonely third place in the final standings."
   }
 },
 {
@@ -144,19 +144,19 @@
   "pk": 8,
   "fields": {
     "name": "Aston Martin",
-    "full_team_name": "1",
+    "full_team_name": "Alfa Romeo Racing ORLEN",
     "team_logo": "https://www.formula1.com/content/dam/fom-website/teams/2021/aston-martin-logo.png.transform/2col-retina/image.png",
     "car_image": "1",
-    "base": "1",
-    "team_chief": "1",
-    "technical_chief": "1",
+    "base": "Silverstone, United Kingdom",
+    "team_chief": "Otmar Szafnauer",
+    "technical_chief": "Andrew Green",
     "chassis": "1",
-    "power_unit": "1",
-    "first_team_entry": 1,
-    "world_championships": 1,
+    "power_unit": "Mercedes",
+    "first_team_entry": 2020,
+    "world_championships": 0,
     "pole_positions": 1,
-    "fastest_laps": 1,
-    "team_profile": "1"
+    "fastest_laps": 0,
+    "team_profile": "Aston Martin’s original Formula 1 foray – over half a century ago – lasted just five races. This time, though, it’s serious. This F1 squad are no strangers to success, having won in their original guise of Jordan and most recently as Racing Point in 2020. Renowned for their ability to punch above their weight, and now with a four-time champion leading their driver line-up, Aston Martin are very much a team to watch in 2021…  2020 With the team firmly back on their feet, the Racing Point name scores a first race win en route to fourth in the standings courtesy of Sergio Perez, who is replaced by Sebastian Vettel for 2021 and the squad’s transformation to Aston Martin.  2019 The hangover from 2018’s turmoil takes its toll, and the team's recovery is a slow one, despite some gutsy drives from the ever-reliable Sergio Perez, who scores 52 of their 73 points, ensuring they retain seventh in the constructors' table.  2018 As the tight intra-team rivalry between stalwart Sergio Perez and Mercedes protege Esteban Ocon continues, drop toward the rear of the midfield amid financial uncertainty, culminating in new ownership, the new Racing Point name – and a new championship entry – from August’s Belgian GP onwards. Recover well to finish seventh overall, despite losing 59 points accrued prior to Spa."
   }
 },
 {

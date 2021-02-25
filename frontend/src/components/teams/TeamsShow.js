@@ -6,11 +6,11 @@ class TeamsShow extends React.Component {
     team: null
   }
   async componentDidMount() {
-    console.log(this.props)
+    // console.log(this.props)
     const teamId = this.props.match.params.id
     // console.log(teamId)
     const response = await getSingleTeam(teamId)
-    // console.log(response)
+    console.log(response)
     this.setState({
       team: response.data
     })
