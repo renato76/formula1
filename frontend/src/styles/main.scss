@@ -732,6 +732,9 @@ button:hover {
     margin: 20px;
     padding: 0;
   }
+  .standings-container {
+    padding: 0 8%;
+  }
 
 }
 
@@ -786,6 +789,9 @@ button:hover {
   .teams-row {
     padding: 0 20px;
   }
+  .standings-container {
+    padding: 0 10%;
+  }
 }
 
 
@@ -818,6 +824,9 @@ button:hover {
     margin: 10px;
     max-width: 650px;
   }
+  // .standings-container {
+  //   max-width: 1200px;
+  // }
 }
 
 @media (min-width: 1224px) {
