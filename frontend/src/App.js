@@ -7,6 +7,7 @@ import DriversShow from './components/drivers/DriversShow'
 import TeamsIndex from './components/teams/TeamsIndex'
 import TeamsShow from './components/teams/TeamsShow'
 
+
 const App = () => {
   return (
     <BrowserRouter>

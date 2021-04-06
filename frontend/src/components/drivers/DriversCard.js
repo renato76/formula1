@@ -4,7 +4,21 @@ import { Link } from 'react-router-dom'
 const DriversCard = (props) => {
 
   const { id, index, title, firstname, surname, image, points, flag, team } = props
-  // console.log(props)
+
+  const teamClassNames = {
+    'Mercedes': 'team-color-icon-mercedes',
+    'Ferrari': 'team-color-icon-ferrari',
+    'McLaren': 'team-color-icon-mclaren',
+    'Alpine': 'team-color-icon-alpine',
+    'Haas F1 Team': 'team-color-icon-haas',
+    'Alfa Romeo Racing': 'team-color-icon-alfa-romeo',
+    'Red Bull Racing': 'team-color-icon-red-bull',
+    'Aston Martin': 'team-color-icon-aston-martin',
+    'AlphaTauri': 'team-color-icon-alpha-tauri',
+    'Williams': 'team-color-icon-williams'
+  }
+  const teamClassName = teamClassNames[team.name]
+  console.log(teamClassName)
   
   return (
     <div className="drivers-card-container">

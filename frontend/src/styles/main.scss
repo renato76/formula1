@@ -38,127 +38,166 @@ h4 {
 
 .logo {
   background-image: url('https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg');
-  width: 125px;
-  height: 31px;
-  position: fixed;
-  left: 33%;
-  top: 20px;
+  width: 115px;
+  height: 29px;
+  // position: fixed;
+  // left: 13%;
+  // top: 22px;
+}
 
+.navbar {
+  background: #db0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .navbar-container {
-  background-color: $f1-red;
-  // height: 70px;
-  width: 100%;
-}
-
-.navbar-closed {
-  background-color: $f1-red;
-  height: 70px;
-  width: 100%;
   display: flex;
-  padding-left: 30px;
-  padding-top: 20px;
+  justify-content: center;
   align-items: center;
-  // animation: navbar-close 200ms ease-in-out;
-  // note display none below, i could do media query on desktop sizes to show this sgain
-  a {
-    display: none;
-  } 
+  height: 60px;
+  max-width: 1500px;
 }
 
-.navbar-mobile {
-  background-color: $f1-red;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  padding-left: 30px;
-  padding-top: 20px;
-  font-family: 'Titillium Web', sans-serif;
-  border-bottom: 1px solid white;
-  animation: navbar-open 300ms linear;
-  
-  a {
-    color: $f1-font-white;
-    font-size: 16px;
-    font-weight: lighter;  
-    text-decoration: none;
-    padding: 25px 0px 30px 0;
-    animation: fadein 300ms linear;
-    // text-align: center;
-  } 
-}
-.navbar-item {
-  padding-left: 10px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  height: 40px;
-  border-bottom: 1px solid #ffffff98;
-  border-right: 1px solid #ffffff98;
-  border-bottom-right-radius: 15px;
-}
-.menu-btn {
-  margin-bottom: 20px;
-  font-size: 31px;
-  color: #fff;
-  border-radius: 12px;
-}
-.times-btn {
-  margin-bottom: 20px;
-  font-size: 35px;
-  color: #fff;
-}
-.menu-btn:hover,
-.times-btn:hover {
-  cursor: pointer;
-}
-.times-btn {
-  animation: timesin 300ms linear;
-}
-
-.navbar-desktop {
-  background-color: $f1-red;
-  height: 70px;
-  display: flex;
-  padding-left: 30px;
-  padding-top: 20px;
-  a {
-    display: flex;
-    color: $f1-font-white;
-    font-weight: bold;  
-    text-decoration: none;
-    padding: 5px;
-    border: none;
-  } 
-}
 .navbar-logo {
-  justify-content: flex-start;
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
   align-items: center;
 }
 
-@keyframes navbar-open {
-  0% {
-    height: 70px;
+.fa-typo3 {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  height: 80px;
+}
+
+.nav-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  margin-top: 6px;
+}
+
+.nav-links:hover {
+  text-decoration: none;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  // border-bottom: 4px solid #fff;
+  transition: all 0.5s ease-out;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
   }
 
-  100% {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 90vh;
-  }
-}
-@keyframes fadein {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
+    position: absolute;
+    top: 70px;
+    left: -100%;
     opacity: 1;
+    transition: all 0.5s ease;
   }
-}
-@keyframes timesin {
-  0% {
-    font-size: 10px;
+
+  .nav-menu.active {
+    background:  #db0000;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
   }
-  100% {
-    font-size: 35px;
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
   }
 }
 
@@ -267,11 +306,11 @@ h4 {
   margin-right: 10px;
   margin-top: 10px;
   
-  .name {
-    border-left: 6px solid #39c7c7;
-    margin-bottom: 14px;
+  // .name {
+  //   border-left: 6px solid #39c7c7;
+  //   margin-bottom: 14px;
     
-  }
+  // }
   h3 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 21px;
@@ -802,17 +841,17 @@ button:hover {
     margin-right: 10px;
     padding: 0;
   }
-  .navbar-desktop {
-    justify-content: center;
-    a {
-      display: flex;  
-      padding: 0 4px;
-    }
-  }
-  .navbar-item {
-    border: none;
+  // .navbar-desktop {
+  //   justify-content: center;
+  //   a {
+  //     display: flex;  
+  //     padding: 0 4px;
+  //   }
+  // }
+  // .navbar-item {
+  //   border: none;
     
-  }
+  // }
   .menu-btn,
   .times-btn {
     display: none;
