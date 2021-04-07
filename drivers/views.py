@@ -23,7 +23,7 @@ class DriversListView(APIView):
         
         return Response(serialized_drivers_list.data, status=status.HTTP_200_OK)
 
-
+    
     def post(self, request):
         driver_to_create = DriverSerializer(data=request.data)
         if driver_to_create.is_valid():

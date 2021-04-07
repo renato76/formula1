@@ -41,7 +41,7 @@ const DriversStandings = (props) => {
       <div className="standings">
         <Link to={`/drivers/${id}`} >
           <div id="standings-list" className="standings-list-items">  
-            <div className="drivers-name">
+            <div className="drivers-name home-icons">
               <span className={teamClassName}></span>
               {info && <h5 className="firstname">{firstname}</h5> }
               <h4 className="surname">{surname}</h4>
