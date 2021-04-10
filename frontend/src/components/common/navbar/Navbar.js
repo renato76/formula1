@@ -8,6 +8,9 @@ function NavbarNew() {
 
   return (
     <>
+      <div className="topnav">
+        
+      </div>
       <nav className="navbar">  
         <div className="navbar-container">   
           <Link to="/" className="logo-container" onClick={closeMobileMenu}></Link>  
@@ -31,12 +34,17 @@ function NavbarNew() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to='/register' className="nav-links-mobile" onClick={closeMobileMenu}>
+              <Link to='/standings' className="nav-links" onClick={closeMobileMenu}>
+                Standings
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to='/register' className="nav-links" onClick={closeMobileMenu}>
                 Register
               </Link>
             </li>
             <li className="nav-item">
-              <Link to='/login' className="nav-links-mobile" onClick={closeMobileMenu}>
+              <Link to='/login' className="nav-links" onClick={closeMobileMenu}>
                 Login
               </Link>
             </li>

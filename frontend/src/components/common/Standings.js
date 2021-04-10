@@ -1,9 +1,8 @@
 import React from 'react'
 import { getAllDrivers, getAllTeams } from '../../lib/api'
 import DriversStandings from '../drivers/DriversStandings'
-import ConstructorsStandings from '../teams/ConstructorsStandings'
 
-class Home extends React.Component {
+class Standings extends React.Component {
   state = {
     screen: 'drivers',
     drivers: null,
@@ -27,21 +26,16 @@ class Home extends React.Component {
     })
   }
 
-
   render() {
     const { screen } = this.state
     const drivers = this.state.drivers
-    const teams = this.state.teams
-
-    // console.log(teams)
-
+    
+    // console.log(drivers)
+    // const teams = this.state.teams
+    console.log(this.state)
     if (!drivers) return null
-    if (!teams) return null
     return (
-      <div className="homepage-container">
-        <div className="hero">
-        
-        </div>
+      <div>
         <div className="tabs">
           {['drivers', 'constructors', 'last-race'].map((tab, i) => (
             <button key={i} value={tab} onClick={() => this.changeTab(tab)} className={`tab ${screen === tab ? 'active' : 'inactive'}`}>{tab.toUpperCase()}</button>
@@ -57,16 +51,10 @@ class Home extends React.Component {
                 <DriversStandings key={driver.id} {...driver} />
               )}       
             </div>
-          </div>       
+          </div>
+          
           <div className="constructors-standings" style={{ display: screen === 'constructors' ? 'block' : 'none' }}>
-            <div className="contructors-standings-heading">
-              <h1>Constructors Standings</h1>
-            </div>
-            <div className="constructors-standings-container">
-              {teams.map(team =>
-                <ConstructorsStandings key={team.id} {...team} />
-              )}
-            </div>
+            <h1>Constructors Standings</h1>
           </div>
           <div className="last-race" style={{ display: screen === 'last-race' ? 'block' : 'none' }}>
             <h1>Last Race</h1>
@@ -78,4 +66,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home
+export default Standings

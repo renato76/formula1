@@ -36,11 +36,29 @@ h4 {
   font-family: $f1-font;
 }
 
+dl,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-container {
+  margin: 0;
+  padding: 0;
+}
+
+
+.topnav {
+  height: 50px;
+  background-color: rgb(235, 235, 235);
+}
+
 .logo-container {
   background-image: url('https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg');
   width: 115px;
   height: 29px;
-  margin-right: 0px;
+  margin-right: 0;
   cursor: pointer;
 }
 
@@ -53,46 +71,42 @@ h4 {
   position: sticky;
   top: 0;
   z-index: 999;
+  padding: 0;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 60px;
-  max-width: 1500px;
+  // max-width: 1500px;
 }
 
 .nav-menu {
   display: flex;
   list-style: none;
-  margin-right: 30px;
+  height: 100%;
 }
 
 .nav-item {
-  height: 82px;
   font-family: 'Orbitron', sans-serif;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 10px;
+  justify-content: center;
 }
 
 .nav-links {
+  padding: 0 20px;
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  height: 100%;
-  margin-top: 10px;
   transition: 500ms;
+  height: 80px;
 }
 
 .nav-links:hover {
   text-decoration: none;
   background-color: #1a1a1a;
   color: white;
-  height: 100%;
   transition: 500ms;
 }
 
@@ -111,6 +125,13 @@ h4 {
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
+  }
+  .topnav {
+    display: none;
+  }
+
+  .navbar-container {
+    height: 80px;
   }
 
   .nav-menu {
@@ -195,6 +216,7 @@ h4 {
 }
 
 .drivers-card-container {
+  background-color: #faf9f4;
   width: 90%;
   margin: 20px;
   border-top: 2px solid #333333;
@@ -275,7 +297,8 @@ h4 {
   }
 }
 .homepage-container {
-  margin-top: 50px;
+  background-color: #faf9f4;
+  // padding-top: 50px;
 }
 
 .drivers-title {
@@ -813,9 +836,6 @@ button:hover {
   }
 }
 
-
-
-
 @media (min-width: 600px) {
 
   .drivers-row {
@@ -899,8 +919,10 @@ button:hover {
     margin-right: 20px;
     cursor: pointer;
   }
+  .navbar-container {
+    margin-right: 50px;
+  }
 }
-
 
 @media (min-width: 1024px) {
   .drivers-card-container {

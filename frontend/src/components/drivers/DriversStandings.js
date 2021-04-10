@@ -5,8 +5,7 @@ const DriversStandings = (props) => {
   const { id, firstname, surname, team, points } = props
   // console.log(props)
   // console.log(team.name)
-
-
+  
   // using React useState Hook to toggle info based on screen size
   const [info, setInfo] = useState(false)
 
