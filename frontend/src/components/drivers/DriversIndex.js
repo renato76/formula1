@@ -35,5 +35,4 @@ class DriversIndex extends React.Component {
     )
   }
 }
-
 export default DriversIndex

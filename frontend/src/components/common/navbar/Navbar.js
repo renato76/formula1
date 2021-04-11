@@ -54,5 +54,4 @@ function NavbarNew() {
     </>
   )
 }
-
 export default NavbarNew

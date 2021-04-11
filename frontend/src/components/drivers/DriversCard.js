@@ -56,5 +56,4 @@ const DriversCard = (props) => {
     </div>
   )
 }
-
 export default DriversCard

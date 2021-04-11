@@ -62,5 +62,4 @@ class TeamsShow extends React.Component {
     )
   }
 }
-
 export default TeamsShow

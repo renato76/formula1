@@ -58,5 +58,4 @@ const TeamsCard = (props) => {
     </div>
   )
 }
-
 export default TeamsCard

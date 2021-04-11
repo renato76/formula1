@@ -50,5 +50,4 @@ const DriversStandings = (props) => {
     </div>
   )
 }
-
 export default DriversStandings

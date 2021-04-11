@@ -39,5 +39,4 @@ class TeamsIndex extends React.Component {
     )
   }
 }
-
 export default TeamsIndex

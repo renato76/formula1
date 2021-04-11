@@ -16,5 +16,4 @@ const ConstructorsStandings = (props) => {
     </div>
   )
 }
-
 export default ConstructorsStandings
