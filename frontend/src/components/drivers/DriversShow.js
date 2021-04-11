@@ -5,22 +5,15 @@ class DriversShow extends React.Component {
   state = {
     driver: null
   }
-
   async componentDidMount() {
     const driverId = this.props.match.params.id
-    // console.log(driverId)
     const response = await getSingleDriver(driverId)
-    console.log(response)
-
     this.setState({
       driver: response.data
     })
   }
-
   render() {
     const { driver } = this.state 
-    console.log(driver)
-    
     if (!driver) return null
     return (
       <div className="drivershow-container">
@@ -59,8 +52,6 @@ class DriversShow extends React.Component {
       </div>
     )
   }
-
-
 }
 
 export default DriversShow

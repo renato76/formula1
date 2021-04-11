@@ -8,27 +8,22 @@ class TeamsIndex extends React.Component {
   }
   async componentDidMount() {
     const response = await getAllTeams()
-    // console.log(response)
     const teams = response.data
-    console.log(teams)
 
-    const sums = (acc, curr) => acc + curr
-    const teamPoints = teams.map(team => team.drivers.map(driver => driver.points).reduce(sums)).sort((a, b) => b > a ? 1 : -1)
-    console.log(teamPoints)
+    // const sums = (acc, curr) => acc + curr
+    // const teamPoints = teams.map(team => team.drivers.map(driver => driver.points).reduce(sums)).sort((a, b) => b > a ? 1 : -1)
+    // console.log(teamPoints)
+
     const sum = (acc, curr) => acc + curr
-    const sortedTeams = teams.sort((a, b) => (b.drivers.map(driver => driver.points).reduce(sum)) > (a.drivers.map(driver => driver.points).reduce(sum)) ? 1 : -1)
-    console.log(sortedTeams)
-
+    const sortedTeams = teams.sort((a, b) => 
+      (b.drivers.map(driver => driver.points).reduce(sum)) > 
+      (a.drivers.map(driver => driver.points).reduce(sum)) ? 1 : -1)
     this.setState({
       teams: sortedTeams
     })
   }
-
-
-
   render() {
     const teams = this.state.teams
-    // console.log(teams)
     if (!teams) return null
     return (
       <div className="homepage-container">
@@ -43,9 +38,6 @@ class TeamsIndex extends React.Component {
       </div>
     )
   }
-
-
 }
-
 
 export default TeamsIndex

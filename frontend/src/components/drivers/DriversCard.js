@@ -2,9 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const DriversCard = (props) => {
-
   const { id, index, title, firstname, surname, image, points, flag, team } = props
-
   const teamClassNames = {
     'Mercedes': 'team-color-icon-mercedes',
     'Ferrari': 'team-color-icon-ferrari',
@@ -19,7 +17,6 @@ const DriversCard = (props) => {
   }
   const teamClassName = teamClassNames[team.name]
   console.log(teamClassName)
-  
   return (
     <div className="drivers-card-container">
       <Link to={`/drivers/${id}`} >

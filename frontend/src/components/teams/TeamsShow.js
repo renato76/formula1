@@ -6,19 +6,15 @@ class TeamsShow extends React.Component {
     team: null
   }
   async componentDidMount() {
-    // console.log(this.props)
     const teamId = this.props.match.params.id
-    // console.log(teamId)
     const response = await getSingleTeam(teamId)
     console.log(response)
     this.setState({
       team: response.data
     })
   }
-
   render() {
     const { team } = this.state
-    console.log(team)
     if (!team) return null
     return (
       <div className="teamsshow-container">
@@ -42,8 +38,7 @@ class TeamsShow extends React.Component {
               <h4>First Team Entry</h4>
               <h4>World Championships</h4>
               <h4>Pole Positions</h4>
-              <h4>Fastest Laps</h4>
-              
+              <h4>Fastest Laps</h4>   
             </div>
             <div className="detail-info">
               <h4>{team.name}</h4>
@@ -66,7 +61,6 @@ class TeamsShow extends React.Component {
       </div>
     )
   }
-
 }
 
 export default TeamsShow

@@ -9,32 +9,23 @@ class Home extends React.Component {
     drivers: null,
     teams: null
   }
-
-  changeTab = screen => {
-    this.setState({ screen })
-  }
-
   async componentDidMount() {
     const response = await getAllDrivers()
-    // console.log(response)
     this.setState({
       drivers: response.data
     })  
     const teams = await getAllTeams()
-    // console.log(teams)
     this.setState({
       teams: teams.data
     })
   }
-
-
+  changeTab = screen => {
+    this.setState({ screen })
+  }
   render() {
     const { screen } = this.state
     const drivers = this.state.drivers
     const teams = this.state.teams
-
-    // console.log(teams)
-
     if (!drivers) return null
     if (!teams) return null
     return (
@@ -44,11 +35,19 @@ class Home extends React.Component {
         </div>
         <div className="tabs">
           {['drivers', 'constructors', 'last-race'].map((tab, i) => (
-            <button key={i} value={tab} onClick={() => this.changeTab(tab)} className={`tab ${screen === tab ? 'active' : 'inactive'}`}>{tab.toUpperCase()}</button>
+            <button 
+              key={i} 
+              value={tab} 
+              onClick={() => this.changeTab(tab)} 
+              className={`tab ${screen === tab ? 'active' : 'inactive'}`}
+            >{tab.toUpperCase()}
+            </button>
           ))}
         </div>
         <div className="home-container">
-          <div className="drivers-standings" style={{ display: screen === 'drivers' ? 'block' : 'none' }}>
+          <div 
+            className="drivers-standings" 
+            style={{ display: screen === 'drivers' ? 'block' : 'none' }}>
             <div className="drivers-standings-heading">
               <h1>Drivers Standings</h1>
             </div>
@@ -58,7 +57,9 @@ class Home extends React.Component {
               )}       
             </div>
           </div>       
-          <div className="constructors-standings" style={{ display: screen === 'constructors' ? 'block' : 'none' }}>
+          <div 
+            className="constructors-standings" 
+            style={{ display: screen === 'constructors' ? 'block' : 'none' }}>
             <div className="contructors-standings-heading">
               <h1>Constructors Standings</h1>
             </div>
@@ -68,7 +69,9 @@ class Home extends React.Component {
               )}
             </div>
           </div>
-          <div className="last-race" style={{ display: screen === 'last-race' ? 'block' : 'none' }}>
+          <div 
+            className="last-race" 
+            style={{ display: screen === 'last-race' ? 'block' : 'none' }}>
             <h1>Last Race</h1>
           </div>
         </div> 

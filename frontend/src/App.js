@@ -8,7 +8,6 @@ import TeamsIndex from './components/teams/TeamsIndex'
 import TeamsShow from './components/teams/TeamsShow'
 import Standings from './components/common/Standings'
 
-
 const App = () => {
   return (
     <BrowserRouter>

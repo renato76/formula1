@@ -3,13 +3,9 @@ import { Link } from 'react-router-dom'
 
 const TeamsCard = (props) => {
   const { id, name, team_logo: teamLogo, car_image: carImage } = props
-  // console.log(props)
-
   const drivers = props.drivers
-  // console.log(drivers)
   const firstname = drivers.map(driver => driver.firstname)
   const surname = drivers.map(driver => driver.surname)
-
   const teamClassNames = {
     'Mercedes': 'team-color-icon-mercedes',
     'Ferrari': 'team-color-icon-ferrari',
@@ -23,8 +19,6 @@ const TeamsCard = (props) => {
     'Williams': 'team-color-icon-williams'
   }
   const teamClassName = teamClassNames[name]
-  // console.log(teamClassName)
-
   return (
     <div className="teams-card-container">
       <Link to={`/teams/${id}`} >

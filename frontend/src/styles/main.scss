@@ -216,7 +216,7 @@ ul {
 }
 
 .drivers-card-container {
-  background-color: #faf9f4;
+  background-color: #f9f9f9;
   width: 90%;
   margin: 20px;
   border-top: 2px solid #333333;
@@ -297,7 +297,7 @@ ul {
   }
 }
 .homepage-container {
-  background-color: #faf9f4;
+  background-color: #f9f9f9;
   // padding-top: 50px;
 }
 
@@ -491,13 +491,11 @@ ul {
 
 }
 .teams-card-image {
-  padding: 5px 10px;
+  padding: 15px 10px;
   display: flex;
   justify-content: center;
   img {
-    width: 100%;
-    height: 1%;
-    
+    width: 85%;
   }
 }
 .teams-drivers-container {
@@ -904,7 +902,7 @@ button:hover {
     max-width: 550px;
   }
   .teams-row {
-    padding: 0 20px;
+    padding: 0 4%;
   }
   .standings-container {
     padding: 0 10%;
@@ -931,23 +929,12 @@ button:hover {
     margin-right: 10px;
     padding: 0;
   }
-  // .navbar-desktop {
-  //   justify-content: center;
-  //   a {
-  //     display: flex;  
-  //     padding: 0 4px;
-  //   }
-  // }
-  // .navbar-item {
-  //   border: none;
-    
-  // }
   .menu-btn,
   .times-btn {
     display: none;
   }
   .teams-row {
-    padding: 0 30px;
+    padding: 0 5%;
   }
   .teams-card {
     margin: 10px;
@@ -966,10 +953,16 @@ button:hover {
     padding: 0;
   }
   .teams-row {
-    padding: 0 50px;
+    padding: 0 10%;
   }
   .teams-card {
     margin: 10px;
-    max-width: 750px;
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .teams-row {
+    padding: 0 10%;
   }
 }

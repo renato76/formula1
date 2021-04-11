@@ -3,12 +3,7 @@ import { Link } from 'react-router-dom'
 
 const DriversStandings = (props) => {
   const { id, firstname, surname, team, points } = props
-  // console.log(props)
-  // console.log(team.name)
-  
-  // using React useState Hook to toggle info based on screen size
   const [info, setInfo] = useState(false)
-
   const showInfo = () => {
     if (window.innerWidth <= 768) {
       setInfo(false)
@@ -20,7 +15,6 @@ const DriversStandings = (props) => {
   useEffect(() => {
     showInfo()
   }, [])
-
   const teamClassNames = {
     'Mercedes': 'team-color-icon-mercedes',
     'Ferrari': 'team-color-icon-ferrari',
@@ -34,7 +28,6 @@ const DriversStandings = (props) => {
     'Williams': 'team-color-icon-williams'
   }
   const teamClassName = teamClassNames[team.name]
-
   return (
     <div className="standings-container">
       <div className="standings">

@@ -6,10 +6,8 @@ class DriversIndex extends React.Component {
   state = {
     drivers: null
   }
-
   async componentDidMount() {
     const response = await getAllDrivers()
-    // console.log(response)
     const drivers = response.data
     drivers.sort((a, b) => b.points > a.points ? 1 : -1)
     for (let i = 0; i < drivers.length; i++) {
@@ -19,15 +17,10 @@ class DriversIndex extends React.Component {
     this.setState({
       drivers
     })
-
-    // console.log(this.state.drivers)
   }
-
   render() {
     const drivers = this.state.drivers
-    // console.log(drivers)
     if (!drivers) return null
-
     return (
       <div className="homepage-container">
         <div className="drivers-title">
