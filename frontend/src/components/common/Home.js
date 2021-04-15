@@ -15,8 +15,12 @@ class Home extends React.Component {
       drivers: response.data
     })  
     const teams = await getAllTeams()
+    const sum = (acc, curr) => acc + curr
+    const sortedTeams = teams.data.sort((a, b) => 
+      (b.drivers.map(driver => driver.points).reduce(sum)) > 
+      (a.drivers.map(driver => driver.points).reduce(sum)) ? 1 : -1)
     this.setState({
-      teams: teams.data
+      teams: sortedTeams
     })
   }
   changeTab = screen => {

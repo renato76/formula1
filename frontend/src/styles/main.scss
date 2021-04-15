@@ -48,168 +48,183 @@ ul {
   padding: 0;
 }
 
+// .topnav {
+//   height: 50px;
+//   background-color: rgb(235, 235, 235);
+// }
 
-.topnav {
-  height: 50px;
-  background-color: rgb(235, 235, 235);
+// .logo-container {
+//   background-image: url('https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg');
+//   width: 115px;
+//   height: 29px;
+//   margin-right: 0;
+//   cursor: pointer;
+// }
+
+// .navbar {
+//   background: #db0000;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 1.2rem;
+//   position: sticky;
+//   top: 0;
+//   z-index: 999;
+//   padding: 0;
+// }
+
+// .navbar-container {
+//   display: flex;
+//   align-items: center;
+//   // max-width: 1500px;
+// }
+
+// .nav-menu {
+//   display: flex;
+//   list-style: none;
+//   height: 100%;
+// }
+
+// .nav-item {
+//   font-family: 'Orbitron', sans-serif;
+//   font-size: 16px;
+//   font-weight: bold;
+//   justify-content: center;
+// }
+
+// .nav-links {
+//   padding: 0 20px;
+//   color: #fff;
+//   display: flex;
+//   align-items: center;
+//   text-decoration: none;
+//   transition: 500ms;
+//   height: 80px;
+// }
+
+// .nav-links:hover {
+//   text-decoration: none;
+//   background-color: #1a1a1a;
+//   color: white;
+//   transition: 500ms;
+// }
+
+// .fa-bars {
+//   color: #fff;
+// }
+
+// .nav-links-mobile {
+//   display: none;
+// }
+
+// .menu-icon {
+//   display: none;
+// }
+
+// @media screen and (max-width: 960px) {
+//   .NavbarItems {
+//     position: relative;
+//   }
+//   .topnav {
+//     display: none;
+//   }
+
+//   .navbar-container {
+//     height: 80px;
+//   }
+
+//   .nav-menu {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     height: 100vh;
+//     position: absolute;
+//     top: 70px;
+//     left: -100%;
+//     opacity: 1;
+//     transition: all 0.5s ease;
+//   }
+
+//   .nav-menu.active {
+//     background:  #db0000;
+//     left: 0;
+//     opacity: 1;
+//     transition: all 0.5s ease;
+//     z-index: 1;
+//   }
+
+//   .nav-links {
+//     text-align: center;
+//     padding: 2rem;
+//     width: 100%;
+//     display: table;
+//   }
+
+//   .nav-links:hover {
+//     background-color: #fff;
+//     color: #242424;
+//     border-radius: 0;
+//   }
+
+//   .navbar-logo {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     transform: translate(25%, 50%);
+//   }
+
+//   .menu-icon {
+//     display: block;
+//     position: absolute;
+//     top: -10px;
+//     right: 0;
+//     transform: translate(-100%, 60%);
+//     font-size: 1.8rem;
+//     cursor: pointer;
+//   }
+
+//   .fa-times {
+//     color: #fff;
+//     font-size: 2rem;
+//   }
+
+//   .nav-links-mobile {
+//     display: block;
+//     text-align: center;
+//     margin: 2rem auto;
+//     border-radius: 4px;
+//     width: 80%;
+//     text-decoration: none;
+//     font-size: 1.5rem;
+//     background-color: transparent;
+//     color: #fff;
+//     padding: 14px 20px;
+//     border: 1px solid #fff;
+//     transition: all 0.3s ease-out;
+//   }
+
+//   .nav-links-mobile:hover {
+//     background: #fff;
+//     color: #242424;
+//     transition: 250ms;
+//   }
+// }
+
+// DriversIndex ***
+.homepage-container {
+  background-color: #f9f9f9;
 }
 
-.logo-container {
-  background-image: url('https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg');
-  width: 115px;
-  height: 29px;
-  margin-right: 0;
-  cursor: pointer;
-}
-
-.navbar {
-  background: #db0000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  padding: 0;
-}
-
-.navbar-container {
-  display: flex;
-  align-items: center;
-  // max-width: 1500px;
-}
-
-.nav-menu {
-  display: flex;
-  list-style: none;
-  height: 100%;
-}
-
-.nav-item {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 16px;
+.drivers-title {
+  margin-left: 20px;
+  h1 {
+  font-size: 30px;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: bold;
-  justify-content: center;
-}
-
-.nav-links {
-  padding: 0 20px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  transition: 500ms;
-  height: 80px;
-}
-
-.nav-links:hover {
-  text-decoration: none;
-  background-color: #1a1a1a;
-  color: white;
-  transition: 500ms;
-}
-
-.fa-bars {
-  color: #fff;
-}
-
-.nav-links-mobile {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-}
-
-@media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
-  }
-  .topnav {
-    display: none;
-  }
-
-  .navbar-container {
-    height: 80px;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 70px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-
-  .nav-menu.active {
-    background:  #db0000;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-
-  .nav-links {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
-
-  .nav-links:hover {
-    background-color: #fff;
-    color: #242424;
-    border-radius: 0;
-  }
-
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
-  }
-
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: -10px;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-
-  .fa-times {
-    color: #fff;
-    font-size: 2rem;
-  }
-
-  .nav-links-mobile {
-    display: block;
-    text-align: center;
-    margin: 2rem auto;
-    border-radius: 4px;
-    width: 80%;
-    text-decoration: none;
-    font-size: 1.5rem;
-    background-color: transparent;
-    color: #fff;
-    padding: 14px 20px;
-    border: 1px solid #fff;
-    transition: all 0.3s ease-out;
-  }
-
-  .nav-links-mobile:hover {
-    background: #fff;
-    color: #242424;
-    transition: 250ms;
   }
 }
+
+
 
 .card {
   border: none;
@@ -244,9 +259,7 @@ ul {
   margin: 5px 10px 0 0 ;
   
 }
-// .card-position {
-  
-// }
+
 .index {
   font-family: $f1-headings;
   font-size: 38px;
@@ -286,29 +299,18 @@ ul {
   background: url('https://www.freeiconspng.com/uploads/large-grid-png-25.png');
 }
 
-.cards-image {
-  // padding: 5px 10px 0 10px;
-  display: flex;
-  justify-content: flex-end;
-  
-  img {
-  width: 70%;  
-  // padding: 5px 5px 0 5px;
-  }
-}
-.homepage-container {
-  background-color: #f9f9f9;
-  // padding-top: 50px;
+.drivers-card-container{
+  max-width: 530px;
 }
 
-.drivers-title {
-  margin-left: 20px;
-  h1 {
-  font-size: 30px;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: bold;
+.cards-image {
+  display: flex;
+  justify-content: flex-end;
+  img {
+  width: 190px;  
   }
 }
+
 .card-namebar {
   display: flex;
   flex-direction: row;
@@ -317,18 +319,11 @@ ul {
   border-bottom: 1px solid $f1-inner-border;
   margin-right: 10px;
   margin-top: 10px;
-  
-  // .name {
-  //   border-left: 6px solid #39c7c7;
-  //   margin-bottom: 14px;
-    
-  // }
   h3 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 21px;
     font-weight: bolder;
     padding-left: 8px;
-    // letter-spacing: 0.001em;
     color: $f1-headings;
     margin: 0;
   }
@@ -501,7 +496,6 @@ ul {
 .teams-drivers-container {
   width: 100%;
   display: flex;
- 
 }
 .team-drivers {
   margin: 10px 10px 10px 0;
@@ -509,15 +503,12 @@ ul {
   border-bottom: 1px solid #2c2c2c98;
   border-right: 1px solid #42424298;
   border-bottom-right-radius: 15px;
-  
   h3 {
-
     font-size: 19px;
     font-weight: bolder;
     margin: 0;
   }
   h4 {
-
     font-size: 17px;
     font-weight: normal;
     margin: 0;
@@ -615,7 +606,6 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 100%;
   background-color: #e4e4e4;
   height: 50px;
 }
@@ -633,8 +623,6 @@ button:hover {
 .standings-container {
   background-color: #e9e9e9;
 }
-
-
 
 .drivers-name {
   h4,
@@ -853,7 +841,11 @@ button:hover {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {  
+  .cards-image {
+    display: flex;
+    justify-content: flex-end;
+  }
   .drivers-card-container {
     width: 43%;
   }

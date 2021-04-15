@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Navbar from './components/common/navbar/Navbar'
+import Navbar from './components/common/Navbar'
 import Home from './components/common/Home'
 import DriversIndex from './components/drivers/DriversIndex'
 import DriversShow from './components/drivers/DriversShow'
