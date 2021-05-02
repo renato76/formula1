@@ -64,7 +64,7 @@ class Home extends React.Component {
           <div 
             className="constructors-standings" 
             style={{ display: screen === 'constructors' ? 'block' : 'none' }}>
-            <div className="contructors-standings-heading">
+            <div className="constructors-standings-heading">
               <h1>Constructors Standings</h1>
             </div>
             <div className="constructors-standings-container">

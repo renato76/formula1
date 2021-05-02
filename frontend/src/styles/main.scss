@@ -639,7 +639,6 @@ button:hover {
   h5 {
     color: white;
   }
-  // background-color: #5a5add;
   background-color: #2b2b2b;
   transition: 200ms ease-in;
 }
@@ -696,6 +695,67 @@ button:hover {
   border-radius: 5px;
   padding: 2px 6px;
 }
+
+
+// Constructors Standings 
+
+.constructors-name {
+  h6 {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  display: flex;
+}
+.constructors-standings-heading {
+  padding: 20px 10px 40px 10px;
+  background-color: #33333f;
+  color: white;
+  margin-bottom: 30px;
+}
+.teamname {
+  h6 {
+    font-size: 14px;
+    color: black;
+  }
+}
+.standings {
+  transition: 200ms ease-in;
+  h5 {
+    color: #212121;
+    font-family: 'Titillium Web', sans-serif;
+  }
+}
+.standings:hover {
+  h6 {
+    color: #212121;
+  }
+  background-color: #2b2b2b;
+  transition: 200ms ease-in;
+}
+.teams-standings-points {
+  display: flex;
+  margin-right: 30px;
+  h6 {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(37, 37, 37);
+  }
+}
+.standings-points {
+  background-color: rgb(223, 223, 223);
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+.car-image-small {
+  width: 120px;
+  margin-right: 20px;
+  // margin-bottom: 5px;
+}
+
+
+
 .home-icons {
   .team-color-icon-mercedes {
     background-color: #28ecff;

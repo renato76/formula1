@@ -2,6 +2,14 @@
 
 </br>
 
-### CURENT SCREENSHOT
+### CURENT SCREENSHOTS
 
-<img src="./frontend/src/styles/screenshots/formula-1-app-screenshot.png" width="500">
+<img src="./frontend/src/styles/screenshots/formula-1-app-driver.png" width="600">
+
+<br />
+<br />
+<br />
+<br />
+
+<img src="./frontend/src/styles/screenshots/formula-1-app-standings.png" width="600">
+
