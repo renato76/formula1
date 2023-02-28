@@ -59,7 +59,7 @@ class Home extends React.Component {
               {drivers.sort((a, b) => b.points > a.points ? 1 : -1).map(driver => 
                 <DriversStandings key={driver.id} {...driver} />
               )}       
-            </div>
+            </div>4
           </div>       
           <div 
             className="constructors-standings" 

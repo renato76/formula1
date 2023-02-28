@@ -42,9 +42,11 @@
 }
 
 .nav-links {
-  padding: 0 20px;
+  width: 120px;
+  margin: 0 auto;
   color: #fff;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   transition: 500ms;
